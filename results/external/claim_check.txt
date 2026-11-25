@@ -1,0 +1,20 @@
+FROZEN EXTERNAL EVALUATION: weights, rules, quantizers and thresholds were unchanged; no retraining or tuning used the public evaluation data.
+Historical overlap qualification: new-source external no-retuning evaluation; historical contamination remains incompletely auditable
+Public Twitter labels are source text-classification labels, not clinician-rated individual risk.
+ESConv is unlabeled for this task: only alert rates are meaningful; never call them false-positive rates.
+The main test, probe and labeled hard negatives are disjoint sampled groups from one Twitter source, not three independently collected corpora.
+Public row labels and author history may be noisy/unknown. Duplicate groups do not establish independent authors.
+A zero empirical flip count is not a clinical-safety guarantee. Inspect absolute recall and fixed-threshold vs original-default comparisons separately.
+Seed means condition on source-development acceptance where specified; rejected seed counts are retained.
+R90 was selected on old calibration data and is not a target achieved by retuning on these new examples.
+No device latency claim follows from CPU inference in this notebook.
+ce: 9/10 source seeds development-accepted; the remaining seeds were not replaced.
+saqs: 8/10 source seeds development-accepted; the remaining seeds were not replaced.
+Primary labeled_hard_negative: recall=n/a; dataset-label FPR=0.7; counts positive=0, negative=300.
+Primary positive_probe: recall=0.8; dataset-label FPR=0.11; counts positive=300, negative=100.
+Primary binary_test: recall=0.846; dataset-label FPR=0.146; counts positive=500, negative=500.
+Primary support_unlabeled: unlabeled alert rate=0.11246200607902736; n=658.
+Primary positive_probe, reference=same_threshold: 6/300 positive losses; do not pool seeds into independent trials.
+Primary binary_test, reference=same_threshold: 7/500 positive losses; do not pool seeds into independent trials.
+Primary positive_probe, reference=original_default_threshold: 2/300 positive losses; do not pool seeds into independent trials.
+Primary binary_test, reference=original_default_threshold: 7/500 positive losses; do not pool seeds into independent trials.

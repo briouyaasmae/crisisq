@@ -1,0 +1,21 @@
+rule_id,family,category,pattern,provenance
+C01,crisis,explicit_intent,\bkill(?:ing)? myself\b,author-written linguistic heuristic
+C02,crisis,explicit_intent,\bend(?:ing)? my (?:own )?life\b,author-written linguistic heuristic
+C03,crisis,explicit_intent,\btak(?:e|ing) my (?:own )?life\b,author-written linguistic heuristic
+C04,crisis,explicit_intent,\b(?:end|ending) it all\b,author-written linguistic heuristic
+C05,crisis,explicit_intent,\bunalive myself\b,author-written linguistic heuristic
+C06,crisis,explicit_wish_dead,\bi (?:really |just |actually )?(?:want|wanna|need) to die\b,author-written linguistic heuristic
+C07,crisis,explicit_wish_dead,\bi wish (?:i was|i were|i am) dead\b|\bbetter off dead\b,author-written linguistic heuristic
+C08,crisis,self_harm_intent,\b(?:hurt|harm|hurting|harming) myself\b,author-written linguistic heuristic
+C09,crisis,method_mention,\bi (?:might |may |will |could |am going to |am thinking (?:of|about) |keep thinking about |thinking about )overdos(?:e|ing)\b,author-written linguistic heuristic
+C10,crisis,method_mention,\bhang(?:ing)? myself\b|\bslit my wrists\b|\bbought the pills\b|\btook too many (?:pills|tablets)\b,author-written linguistic heuristic
+C11,crisis,preparation,\bsaid my goodbyes\b|\bwriting my last (?:note|message|letter)\b|\bpainless ways? to go\b,author-written linguistic heuristic
+C12,crisis,explicit_intent,\bno reason to live\b|\bend my suffering\b|\bdisappear permanently\b,author-written linguistic heuristic
+C13,crisis,explicit_intent,\bi (?:am|m) going to (?:die|jump)\b,author-written linguistic heuristic
+S01,safe_context,third_party_support,"\b(?:support|help|helping|supporting) (?:a |my |an? )?(?:suicidal )?(?:friend|sister|brother|colleague|someone)\b.*\bsuicidal\b|\b(?:my|a) (?:friend|sister|brother|colleague)\b.{0,30}\bis suicidal\b|\bsomeone is suicidal\b",author-written linguistic heuristic
+S02,safe_context,third_party_support,\bhow (?:can|do) i (?:support|help|ask) (?:a |an |my )?(?:suicidal|someone),author-written linguistic heuristic
+S03,safe_context,prevention_research,\bsuicide prevention\b,author-written linguistic heuristic
+S04,safe_context,prevention_research,\bresearch(?:ing)? (?:on |about )?suicide\b,author-written linguistic heuristic
+S05,safe_context,explicit_negation,\bi (?:do not|dont|am not|m not|am never) (?:want to die|suicidal)\b|\bnot suicidal\b|\bim not suicidal\b,author-written linguistic heuristic
+S06,safe_context,idiom,\bdying of embarrassment\b|\bnot literally\b,author-written linguistic heuristic
+S07,safe_context,prevention_research,\bprevention hotline\b|\bcrisis hotlines?\b,author-written linguistic heuristic

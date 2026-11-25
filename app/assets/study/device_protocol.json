@@ -1,0 +1,64 @@
+{
+  "batch": 1,
+  "classification_scope": "parity and timing on a fixed subset of previously inspected external rows; not new independent classification evaluation",
+  "evidence_plan_hash": "73eb4e3dbd50dd2a68b000a3e6bf58fd1f9f7a6d655a23b7069131c039d2ba7c",
+  "max_length": 128,
+  "models": {
+    "fp32": {
+      "all_frozen_file_hashes": {
+        "models/saqs__42/config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+        "models/saqs__42/fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+        "models/saqs__42/tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+        "models/saqs__42/tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+      },
+      "model_file": "models/fp32/fp32.onnx",
+      "model_sha256": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+      "source_path": "/kaggle/input/notebooks/asmaebriouya/crisisq-nonclinical-claim-verification/crisisq_nonclinical_v1_compat/models/saqs__42/fp32.onnx",
+      "tokenizer_source_dir": "/kaggle/input/notebooks/asmaebriouya/crisisq-nonclinical-claim-verification/crisisq_nonclinical_v1_compat/models/saqs__42"
+    },
+    "q_quint8": {
+      "all_frozen_file_hashes": {
+        "models/saqs__42/config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+        "models/saqs__42/q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2",
+        "models/saqs__42/tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+        "models/saqs__42/tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+      },
+      "model_file": "models/q_quint8/q_quint8.onnx",
+      "model_sha256": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2",
+      "source_path": "/kaggle/input/notebooks/asmaebriouya/crisisq-nonclinical-claim-verification/crisisq_nonclinical_v1_compat/models/saqs__42/q_quint8.onnx",
+      "tokenizer_source_dir": "/kaggle/input/notebooks/asmaebriouya/crisisq-nonclinical-claim-verification/crisisq_nonclinical_v1_compat/models/saqs__42"
+    }
+  },
+  "modes": [
+    "neural",
+    "hybrid"
+  ],
+  "on_device_tokenizer_scope": "routing_tokenization_model_pipeline",
+  "order_seed": 20261111,
+  "padding": "max_length",
+  "pretokenized_scope": "routing_and_model_only",
+  "primary": {
+    "arm": "saqs",
+    "seed": 42,
+    "tau": 0.6455836149936347,
+    "variant": "q_quint8"
+  },
+  "profiles": [
+    "binary_test",
+    "labeled_hard_negative",
+    "positive_probe",
+    "support_unlabeled"
+  ],
+  "repeats": 5,
+  "required_context": [
+    "device_id",
+    "os",
+    "runtime",
+    "provider",
+    "threads",
+    "thermal_state",
+    "evidence_plan_hash"
+  ],
+  "tau": 0.6455836149936347,
+  "warmup_messages": 10
+}

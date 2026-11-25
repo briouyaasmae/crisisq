@@ -1,0 +1,182 @@
+{
+  "contrast": "\\b(?:but|however|although|though|yet|except|until|still)\\b",
+  "crisis": [
+    [
+      "C01",
+      "explicit_intent",
+      "\\bkill(?:ing)? myself\\b"
+    ],
+    [
+      "C02",
+      "explicit_intent",
+      "\\bend(?:ing)? my (?:own )?life\\b"
+    ],
+    [
+      "C03",
+      "explicit_intent",
+      "\\btak(?:e|ing) my (?:own )?life\\b"
+    ],
+    [
+      "C04",
+      "explicit_intent",
+      "\\b(?:end|ending) it all\\b"
+    ],
+    [
+      "C05",
+      "explicit_intent",
+      "\\bunalive myself\\b"
+    ],
+    [
+      "C06",
+      "explicit_wish_dead",
+      "\\bi (?:really |just |actually )?(?:want|wanna|need) to die\\b"
+    ],
+    [
+      "C07",
+      "explicit_wish_dead",
+      "\\bi wish (?:i was|i were|i am) dead\\b|\\bbetter off dead\\b"
+    ],
+    [
+      "C08",
+      "self_harm_intent",
+      "\\b(?:hurt|harm|hurting|harming) myself\\b"
+    ],
+    [
+      "C09",
+      "method_mention",
+      "\\bi (?:might |may |will |could |am going to |am thinking (?:of|about) |keep thinking about |thinking about )overdos(?:e|ing)\\b"
+    ],
+    [
+      "C10",
+      "method_mention",
+      "\\bhang(?:ing)? myself\\b|\\bslit my wrists\\b|\\bbought the pills\\b|\\btook too many (?:pills|tablets)\\b"
+    ],
+    [
+      "C11",
+      "preparation",
+      "\\bsaid my goodbyes\\b|\\bwriting my last (?:note|message|letter)\\b|\\bpainless ways? to go\\b"
+    ],
+    [
+      "C12",
+      "explicit_intent",
+      "\\bno reason to live\\b|\\bend my suffering\\b|\\bdisappear permanently\\b"
+    ],
+    [
+      "C13",
+      "explicit_intent",
+      "\\bi (?:am|m) going to (?:die|jump)\\b"
+    ]
+  ],
+  "negators": [
+    "aint",
+    "arent",
+    "cannot",
+    "cant",
+    "didnt",
+    "dont",
+    "isnt",
+    "never",
+    "no",
+    "nobody",
+    "not",
+    "without",
+    "wont",
+    "wouldnt"
+  ],
+  "risk": "\\b(?:tonight|pills?|plan|planning|goodbye|die|dies|dead|dying|kill|disappear|gone|hurt|harm|hopeless|worthless|burden|no point|never wake|not be alive|stay alive|staying alive|leave this world|give away|giving away|swallow|be here anymore|exist|existing|suicide|suicidal|end it|ending)\\b",
+  "safe": [
+    [
+      "S01",
+      "third_party_support",
+      "\\b(?:support|help|helping|supporting) (?:a |my |an? )?(?:suicidal )?(?:friend|sister|brother|colleague|someone)\\b.*\\bsuicidal\\b|\\b(?:my|a) (?:friend|sister|brother|colleague)\\b.{0,30}\\bis suicidal\\b|\\bsomeone is suicidal\\b"
+    ],
+    [
+      "S02",
+      "third_party_support",
+      "\\bhow (?:can|do) i (?:support|help|ask) (?:a |an |my )?(?:suicidal|someone)"
+    ],
+    [
+      "S03",
+      "prevention_research",
+      "\\bsuicide prevention\\b"
+    ],
+    [
+      "S04",
+      "prevention_research",
+      "\\bresearch(?:ing)? (?:on |about )?suicide\\b"
+    ],
+    [
+      "S05",
+      "explicit_negation",
+      "\\bi (?:do not|dont|am not|m not|am never) (?:want to die|suicidal)\\b|\\bnot suicidal\\b|\\bim not suicidal\\b"
+    ],
+    [
+      "S06",
+      "idiom",
+      "\\bdying of embarrassment\\b|\\bnot literally\\b"
+    ],
+    [
+      "S07",
+      "prevention_research",
+      "\\bprevention hotline\\b|\\bcrisis hotlines?\\b"
+    ]
+  ],
+  "source": "def stage1_v2(text, return_trace=False):\n    t = normalize_s1(text)\n    aff, neg = [], []\n    for rid, cat, rx in _C:\n        for m in rx.finditer(t):\n            (neg if _is_negated(t, m.start()) else aff).append(rid)\n    safe_hits, spans = [], []\n    for rid, cat, rx in _S:\n        for m in rx.finditer(t):\n            safe_hits.append(rid); spans.append(m.span())\n    trace = dict(crisis_affirmed=sorted(set(aff)), crisis_negated=sorted(set(neg)), safe=sorted(set(safe_hits)))\n    if aff and safe_hits:\n        out = (None, \"conflict_to_stage2\")\n    elif aff:\n        out = (1, \"crisis\")\n    elif neg:                                   # crisis words under negation, e.g. \"I would never hurt myself\"\n        out = (None, \"negated_crisis_to_stage2\")\n    elif safe_hits:\n        resid = t\n        for a, b in sorted(spans, reverse=True):\n            resid = resid[:a] + \" \" + resid[b:]\n        if V2_CONTRAST.search(t) or V2_RISK_CUES.search(resid):\n            out = (None, \"safe_with_residual_risk_to_stage2\")\n        else:\n            out = (0, \"safe_context\")\n    else:\n        out = (None, \"uncertain\")\n    return (out + (trace,)) if return_trace else out\ndef _is_negated(t, start):\n    prev = t[:start].split()[-4:]\n    return any(w in V2_NEGATORS for w in prev)\ndef normalize_s1(t):\n    t = str(t).lower()\n    for ch in [\"'\", \"\u2019\", \"`\", \"\u2018\"]:\n        t = t.replace(ch, \"\")\n    t = re.sub(r\"[^a-z0-9\\s]\", \" \", t)\n    return re.sub(r\"\\s+\", \" \", t).strip()\n",
+  "v1_crisis": [
+    "kill myself",
+    "end my life",
+    "take my own life",
+    "take my life",
+    "unalive myself",
+    "overdose",
+    "overdosing",
+    "want to die",
+    "no reason to live",
+    "ending it all",
+    "end it all",
+    "better off dead",
+    "world would be better without me",
+    "not waking up",
+    "hurt myself",
+    "harm myself",
+    "self harm",
+    "self-harm",
+    "hang myself",
+    "bought the pills",
+    "took too many",
+    "slit my wrists",
+    "loaded the gun",
+    "want to end it",
+    "end my suffering",
+    "want to disappear permanently",
+    "painless ways to go",
+    "writing my last",
+    "goodbye to everyone",
+    "said my goodbyes",
+    "take my own life",
+    "end it tonight"
+  ],
+  "v1_safe": [
+    "how can i support a suicidal",
+    "support a suicidal friend",
+    "help a suicidal friend",
+    "my sister is suicidal",
+    "my brother is suicidal",
+    "my friend is suicidal",
+    "suicide prevention resources",
+    "researching suicide prevention",
+    "research on suicide",
+    "i dont want to die",
+    "i do not want to die",
+    "i am not suicidal",
+    "im not suicidal",
+    "not suicidal",
+    "dying of embarrassment",
+    "suicide prevention for a paper",
+    "not literally",
+    "prevention hotline",
+    "how do i ask someone if they are suicidal",
+    "he said he wants to kill himself",
+    "she said she wants to end her life"
+  ]
+}

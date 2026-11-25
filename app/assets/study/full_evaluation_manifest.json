@@ -1,0 +1,40 @@
+{
+  "case_count": 1700,
+  "cases_sha256": "a24de8c2b432ddbe3880a579abc9106cde59d38b9f545eeae30f73ad955b1372",
+  "counts": {
+    "binary_test": 1000,
+    "labeled_hard_negative": 300,
+    "positive_probe": 400
+  },
+  "historical_overlap": "Historical training overlap remains incompletely auditable.",
+  "inference": "one neural pass per case per model; neural and hybrid decisions derived from the same frozen probability and gate",
+  "labeled_membership_hash": "e07d7354a76be2071077b1ab7aaa2baf0fb1d6a897d8a27b5c1a3de9c4be49ed",
+  "max_length": 128,
+  "model_hashes": {
+    "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+    "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+    "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2",
+    "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+    "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+  },
+  "negative_count": 900,
+  "positive_count": 800,
+  "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+  "scope": "post-hoc full frozen-source device classification; no new independent dataset, model selection, threshold fitting, latency or clinical claims",
+  "source_evaluation_rows_hash": "f5762e095d91b17eb58123d4304944dd29d99d2f2e8e0c0d2ae5b7528dbdc057",
+  "source_external_hash": "fe7125e21acb826cd46fa837388b55ff75dfe1b4177a68cdebf133d14ab1dfbf",
+  "source_records": {
+    "twitter": {
+      "bytes": 3625261,
+      "commit": "d800024117181614aa908c821400cede24e07355",
+      "path": "twitter-suicidal_data.csv",
+      "repo": "laxmimerit/twitter-suicidal-intention-dataset",
+      "sha256": "e2abd725b4f1c3d758e4df0c9f04416954ac96d9be61dc25a6c73cdaeecc470e",
+      "url": "https://raw.githubusercontent.com/laxmimerit/twitter-suicidal-intention-dataset/d800024117181614aa908c821400cede24e07355/twitter-suicidal_data.csv"
+    }
+  },
+  "tau": 0.6455836149936347,
+  "tokenizer_builder": "tokenizers 0.23.3",
+  "unlabeled_support": "excluded; this packet includes source labels 0/1 only",
+  "version": "full_labeled_device_evaluation_v1"
+}

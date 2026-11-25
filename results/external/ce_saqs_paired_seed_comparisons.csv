@@ -1,0 +1,64 @@
+analysis,system,variant,partition,metric,paired_seeds,saqs_minus_ce,seed_delta_lo,seed_delta_hi,conditioning
+source_selected,neural,procedure,labeled_hard_negative,fpr,7,0.23571428571428574,0.17044596609229218,0.3009826053362793,jointly development-accepted seeds
+source_selected,neural,procedure,labeled_hard_negative,alert_rate,7,0.23571428571428574,0.17044596609229218,0.3009826053362793,jointly development-accepted seeds
+source_selected,neural,procedure,positive_probe,recall,7,0.04095238095238095,0.003672174349154435,0.07823258755560747,jointly development-accepted seeds
+source_selected,neural,procedure,positive_probe,fpr,7,0.04857142857142858,0.0313281006626978,0.06581475648015936,jointly development-accepted seeds
+source_selected,neural,procedure,positive_probe,alert_rate,7,0.04285714285714283,0.012171033293962151,0.0735432524203235,jointly development-accepted seeds
+source_selected,neural,procedure,binary_test,recall,7,0.04771428571428572,0.001751175562887057,0.09367739586568438,jointly development-accepted seeds
+source_selected,neural,procedure,binary_test,fpr,7,0.047999999999999994,0.031216321596227538,0.06478367840377244,jointly development-accepted seeds
+source_selected,neural,procedure,binary_test,alert_rate,7,0.04785714285714284,0.020796231217223984,0.0749180544970617,jointly development-accepted seeds
+source_selected,neural,procedure,support_unlabeled,alert_rate,7,0.05058619192357794,0.02463484254219294,0.07653754130496293,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,labeled_hard_negative,fpr,7,0.11523809523809525,0.08276554758485372,0.14771064289133679,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,labeled_hard_negative,alert_rate,7,0.11523809523809525,0.08276554758485372,0.14771064289133679,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,positive_probe,recall,7,0.03380952380952381,-0.0018068705331154428,0.06942591815216306,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,positive_probe,fpr,7,0.032857142857142856,0.01802661746076855,0.04768766825351716,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,positive_probe,alert_rate,7,0.03357142857142855,0.0037861917922904324,0.06335666535056667,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,binary_test,recall,7,0.04257142857142858,0.0017562866451882042,0.08338657049766895,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,binary_test,fpr,7,0.021142857142857137,0.009451346399182508,0.03283436788653177,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,binary_test,alert_rate,7,0.03185714285714286,0.007666762174396279,0.05604752353988944,jointly development-accepted seeds
+source_selected,hybrid_v1,procedure,support_unlabeled,alert_rate,7,0.05058619192357794,0.02463484254219294,0.07653754130496293,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,labeled_hard_negative,fpr,7,0.1338095238095238,0.09193805358288668,0.17568099403616091,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,labeled_hard_negative,alert_rate,7,0.1338095238095238,0.09193805358288668,0.17568099403616091,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,positive_probe,recall,7,0.03380952380952381,0.00025403340521899104,0.06736501421382862,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,positive_probe,fpr,7,0.04142857142857143,0.02503280870070131,0.05782433415644156,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,positive_probe,alert_rate,7,0.035714285714285685,0.007658695579216942,0.06376987584935442,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,binary_test,recall,7,0.042,0.0024292810159864675,0.08157071898401354,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,binary_test,fpr,7,0.027714285714285716,0.014572856947483814,0.040855714481087615,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,binary_test,alert_rate,7,0.034857142857142864,0.010743494321011363,0.058970791393274366,jointly development-accepted seeds
+source_selected,hybrid_v2,procedure,support_unlabeled,alert_rate,7,0.05058619192357794,0.02463484254219294,0.07653754130496293,jointly development-accepted seeds
+source_R90,neural,fp32,labeled_hard_negative,fpr,10,0.13633333333333336,0.07460687938586663,0.1980597872808001,all available original paired seeds
+source_R90,neural,fp32,labeled_hard_negative,alert_rate,10,0.13633333333333336,0.07460687938586663,0.1980597872808001,all available original paired seeds
+source_R90,neural,qint8,labeled_hard_negative,fpr,10,0.15966666666666668,0.08352396813634867,0.2358093651969847,all available original paired seeds
+source_R90,neural,qint8,labeled_hard_negative,alert_rate,10,0.15966666666666668,0.08352396813634867,0.2358093651969847,all available original paired seeds
+source_R90,neural,fp32,positive_probe,recall,10,0.006333333333333335,-0.012524677853841938,0.025191344520508606,all available original paired seeds
+source_R90,neural,fp32,positive_probe,fpr,10,0.023,0.005788434216929893,0.040211565783070106,all available original paired seeds
+source_R90,neural,fp32,positive_probe,alert_rate,10,0.010499999999999999,-0.006293544045946287,0.027293544045946284,all available original paired seeds
+source_R90,neural,qint8,positive_probe,recall,10,0.011666666666666669,-0.0074838888634147956,0.030817222196748133,all available original paired seeds
+source_R90,neural,qint8,positive_probe,fpr,10,0.029000000000000005,0.00920702252679698,0.048792977473203034,all available original paired seeds
+source_R90,neural,qint8,positive_probe,alert_rate,10,0.016000000000000004,-0.0017882860141476727,0.033788286014147684,all available original paired seeds
+source_R90,neural,fp32,binary_test,recall,10,0.015199999999999969,-0.008126437240427655,0.03852643724042759,all available original paired seeds
+source_R90,neural,fp32,binary_test,fpr,10,0.0134,-0.004226770934808251,0.031026770934808254,all available original paired seeds
+source_R90,neural,fp32,binary_test,alert_rate,10,0.01429999999999999,-0.004065626640309728,0.03266562664030971,all available original paired seeds
+source_R90,neural,qint8,binary_test,recall,10,0.009000000000000008,-0.024227966795373652,0.04222796679537367,all available original paired seeds
+source_R90,neural,qint8,binary_test,fpr,10,0.0238,0.0071772918033708236,0.04042270819662918,all available original paired seeds
+source_R90,neural,qint8,binary_test,alert_rate,10,0.016400000000000005,-0.006613303323254063,0.03941330332325407,all available original paired seeds
+source_R90,neural,fp32,support_unlabeled,alert_rate,10,0.023860182370820666,-0.003292684974761338,0.05101304971640267,all available original paired seeds
+source_R90,neural,qint8,support_unlabeled,alert_rate,10,0.022948328267477204,-0.005899561687456371,0.051796218222410775,all available original paired seeds
+source_R90,hybrid,fp32,labeled_hard_negative,fpr,10,0.08566666666666668,0.04226150620466642,0.12907182712866694,all available original paired seeds
+source_R90,hybrid,fp32,labeled_hard_negative,alert_rate,10,0.08566666666666668,0.04226150620466642,0.12907182712866694,all available original paired seeds
+source_R90,hybrid,qint8,labeled_hard_negative,fpr,10,0.10133333333333332,0.051591271199246155,0.1510753954674205,all available original paired seeds
+source_R90,hybrid,qint8,labeled_hard_negative,alert_rate,10,0.10133333333333332,0.051591271199246155,0.1510753954674205,all available original paired seeds
+source_R90,hybrid,fp32,positive_probe,recall,10,0.0030000000000000027,-0.013499413690259879,0.019499413690259884,all available original paired seeds
+source_R90,hybrid,fp32,positive_probe,fpr,10,0.025,0.009093247457251277,0.040906752542748726,all available original paired seeds
+source_R90,hybrid,fp32,positive_probe,alert_rate,10,0.008499999999999985,-0.00649123660821343,0.023491236608213402,all available original paired seeds
+source_R90,hybrid,qint8,positive_probe,recall,10,0.008666666666666656,-0.007630481665198741,0.024963814998532053,all available original paired seeds
+source_R90,hybrid,qint8,positive_probe,fpr,10,0.03500000000000001,0.020994098524943237,0.04900590147505678,all available original paired seeds
+source_R90,hybrid,qint8,positive_probe,alert_rate,10,0.015250000000000019,0.0017229537780557407,0.028777046221944297,all available original paired seeds
+source_R90,hybrid,fp32,binary_test,recall,10,0.012599999999999978,-0.008330082042869084,0.03353008204286904,all available original paired seeds
+source_R90,hybrid,fp32,binary_test,fpr,10,0.012999999999999998,-0.0012952105327665893,0.027295210532766585,all available original paired seeds
+source_R90,hybrid,fp32,binary_test,alert_rate,10,0.0128,-0.0035884573937200476,0.02918845739372005,all available original paired seeds
+source_R90,hybrid,qint8,binary_test,recall,10,0.012199999999999989,-0.01095272392797748,0.03535272392797746,all available original paired seeds
+source_R90,hybrid,qint8,binary_test,fpr,10,0.016200000000000003,0.004885193287694831,0.027514806712305176,all available original paired seeds
+source_R90,hybrid,qint8,binary_test,alert_rate,10,0.0142,-0.001278475072786795,0.029678475072786797,all available original paired seeds
+source_R90,hybrid,fp32,support_unlabeled,alert_rate,10,0.024316109422492398,-0.00029438139594946053,0.04892660024093426,all available original paired seeds
+source_R90,hybrid,qint8,support_unlabeled,alert_rate,10,0.02082066869300912,-0.005306836388201404,0.04694817377421964,all available original paired seeds

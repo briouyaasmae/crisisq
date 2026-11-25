@@ -1,0 +1,29 @@
+name: crisisq_device_study
+description: Offline reproducible device benchmarking for the frozen CrisisQ study.
+publish_to: none
+version: 1.1.0+2
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+  flutter: '>=3.44.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_onnxruntime: 1.9.0
+  crypto: 3.0.8
+  path_provider: 2.1.6
+  share_plus: 13.3.1
+  device_info_plus: 13.3.0
+  wakelock_plus: 1.8.2
+  archive: 4.6.0
+  unorm_dart: 0.3.3
+  crisisq_device_metrics:
+    path: packages/crisisq_device_metrics
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/study/
+    - assets/models/

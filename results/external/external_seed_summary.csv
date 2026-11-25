@@ -1,0 +1,378 @@
+arm,analysis,variant,system,partition,metric,seeds,mean,sd,seed_mean_lo,seed_mean_hi,conditioning
+ce,source_R90,fp32,hybrid,binary_test,recall,10,0.808,0.022744962812309293,0.7917292337757666,0.8242707662242335,all frozen source seeds
+ce,source_R90,fp32,hybrid,binary_test,fpr,10,0.129,0.013703203194062976,0.11919731896096557,0.13880268103903443,all frozen source seeds
+ce,source_R90,fp32,hybrid,binary_test,alert_rate,10,0.46849999999999997,0.017089632984811448,0.456274813023509,0.48072518697649097,all frozen source seeds
+ce,source_R90,fp32,hybrid,binary_test,stage2_rate,10,0.8030000000000002,1.1702778228589004e-16,0.803,0.8030000000000003,all frozen source seeds
+ce,source_R90,fp32,hybrid,labeled_hard_negative,fpr,10,0.6133333333333333,0.05223404121574738,0.5759673512219688,0.6506993154446977,all frozen source seeds
+ce,source_R90,fp32,hybrid,labeled_hard_negative,alert_rate,10,0.6133333333333333,0.05223404121574738,0.5759673512219688,0.6506993154446977,all frozen source seeds
+ce,source_R90,fp32,hybrid,labeled_hard_negative,stage2_rate,10,0.6500000000000001,1.1702778228589004e-16,0.65,0.6500000000000002,all frozen source seeds
+ce,source_R90,fp32,hybrid,positive_probe,recall,10,0.7886666666666666,0.014072124621322282,0.7786000751368751,0.7987332581964581,all frozen source seeds
+ce,source_R90,fp32,hybrid,positive_probe,fpr,10,0.06799999999999999,0.016193277068654824,0.056416027418355136,0.07958397258164485,all frozen source seeds
+ce,source_R90,fp32,hybrid,positive_probe,alert_rate,10,0.6084999999999999,0.013652431610848264,0.5987336387636462,0.6182663612363537,all frozen source seeds
+ce,source_R90,fp32,hybrid,positive_probe,stage2_rate,10,0.7775,0.0,0.7775,0.7775,all frozen source seeds
+ce,source_R90,fp32,hybrid,support_unlabeled,alert_rate,10,0.06337386018237082,0.015745769613900125,0.052110015148966,0.07463770521577563,all frozen source seeds
+ce,source_R90,fp32,hybrid,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,fp32,neural,binary_test,recall,10,0.8086,0.02639949494466385,0.7897149389767304,0.8274850610232696,all frozen source seeds
+ce,source_R90,fp32,neural,binary_test,fpr,10,0.122,0.021623032986969142,0.10653181402435793,0.13746818597564206,all frozen source seeds
+ce,source_R90,fp32,neural,binary_test,alert_rate,10,0.46529999999999994,0.0227305472388541,0.44903954605579144,0.48156045394420843,all frozen source seeds
+ce,source_R90,fp32,neural,binary_test,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,fp32,neural,labeled_hard_negative,fpr,10,0.5116666666666666,0.08652766630989789,0.4497685030128265,0.5735648303205066,all frozen source seeds
+ce,source_R90,fp32,neural,labeled_hard_negative,alert_rate,10,0.5116666666666666,0.08652766630989789,0.4497685030128265,0.5735648303205066,all frozen source seeds
+ce,source_R90,fp32,neural,labeled_hard_negative,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,fp32,neural,positive_probe,recall,10,0.7886666666666666,0.02085813338712411,0.7737456569021615,0.8035876764311718,all frozen source seeds
+ce,source_R90,fp32,neural,positive_probe,fpr,10,0.068,0.015491933384829668,0.056917738466050784,0.07908226153394923,all frozen source seeds
+ce,source_R90,fp32,neural,positive_probe,alert_rate,10,0.6085,0.018863545089227884,0.5950058327489984,0.6219941672510017,all frozen source seeds
+ce,source_R90,fp32,neural,positive_probe,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,fp32,neural,support_unlabeled,alert_rate,10,0.08145896656534954,0.021048616978598403,0.06640169304820574,0.09651624008249333,all frozen source seeds
+ce,source_R90,fp32,neural,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,qint8,hybrid,binary_test,recall,10,0.7946000000000001,0.02706453193552198,0.7752392001725824,0.8139607998274178,all frozen source seeds
+ce,source_R90,qint8,hybrid,binary_test,fpr,10,0.12160000000000001,0.015938771735753178,0.11019808956585722,0.1330019104341428,all frozen source seeds
+ce,source_R90,qint8,hybrid,binary_test,alert_rate,10,0.45809999999999995,0.019750949344272038,0.4439710219867491,0.4722289780132508,all frozen source seeds
+ce,source_R90,qint8,hybrid,binary_test,stage2_rate,10,0.8030000000000002,1.1702778228589004e-16,0.803,0.8030000000000003,all frozen source seeds
+ce,source_R90,qint8,hybrid,labeled_hard_negative,fpr,10,0.5816666666666668,0.06362020798612286,0.5361555115233793,0.6271778218099543,all frozen source seeds
+ce,source_R90,qint8,hybrid,labeled_hard_negative,alert_rate,10,0.5816666666666668,0.06362020798612286,0.5361555115233793,0.6271778218099543,all frozen source seeds
+ce,source_R90,qint8,hybrid,labeled_hard_negative,stage2_rate,10,0.6500000000000001,1.1702778228589004e-16,0.65,0.6500000000000002,all frozen source seeds
+ce,source_R90,qint8,hybrid,positive_probe,recall,10,0.7673333333333334,0.020893616486298942,0.7523869404887876,0.7822797261778792,all frozen source seeds
+ce,source_R90,qint8,hybrid,positive_probe,fpr,10,0.051000000000000004,0.017919573407620817,0.03818110941049344,0.06381889058950657,all frozen source seeds
+ce,source_R90,qint8,hybrid,positive_probe,alert_rate,10,0.5882499999999999,0.01859846170460819,0.5749454619788488,0.6015545380211511,all frozen source seeds
+ce,source_R90,qint8,hybrid,positive_probe,stage2_rate,10,0.7775,0.0,0.7775,0.7775,all frozen source seeds
+ce,source_R90,qint8,hybrid,support_unlabeled,alert_rate,10,0.0696048632218845,0.016614154639996916,0.057719812963004484,0.08148991348076451,all frozen source seeds
+ce,source_R90,qint8,hybrid,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,qint8,neural,binary_test,recall,10,0.7959999999999999,0.03822738983155053,0.7686537726860918,0.823346227313908,all frozen source seeds
+ce,source_R90,qint8,neural,binary_test,fpr,10,0.10800000000000001,0.023683092891108815,0.09105813594518196,0.12494186405481807,all frozen source seeds
+ce,source_R90,qint8,neural,binary_test,alert_rate,10,0.45200000000000007,0.0286356421265527,0.43151529564735996,0.4724847043526402,all frozen source seeds
+ce,source_R90,qint8,neural,binary_test,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,qint8,neural,labeled_hard_negative,fpr,10,0.4666666666666667,0.10175011754171633,0.39387901739807457,0.5394543159352588,all frozen source seeds
+ce,source_R90,qint8,neural,labeled_hard_negative,alert_rate,10,0.4666666666666667,0.10175011754171633,0.39387901739807457,0.5394543159352588,all frozen source seeds
+ce,source_R90,qint8,neural,labeled_hard_negative,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,qint8,neural,positive_probe,recall,10,0.7660000000000001,0.026424829326568422,0.7470968158516762,0.784903184148324,all frozen source seeds
+ce,source_R90,qint8,neural,positive_probe,fpr,10,0.054000000000000006,0.021186998109427604,0.03884373458525907,0.06915626541474094,all frozen source seeds
+ce,source_R90,qint8,neural,positive_probe,alert_rate,10,0.5880000000000001,0.023944379994757306,0.5708712224111414,0.6051287775888587,all frozen source seeds
+ce,source_R90,qint8,neural,positive_probe,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_R90,qint8,neural,support_unlabeled,alert_rate,10,0.08525835866261397,0.0167472330792954,0.07327810982314363,0.09723860750208431,all frozen source seeds
+ce,source_R90,qint8,neural,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+ce,source_selected,q_perchannel_rr,hybrid_v1,binary_test,recall,5,0.7404,0.02056210105995982,0.7148687793864203,0.7659312206135795,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,binary_test,fpr,5,0.11679999999999999,0.004604345773288533,0.11108294961802594,0.12251705038197404,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,binary_test,alert_rate,5,0.4286,0.012054044964243343,0.4136329263351696,0.44356707366483034,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,binary_test,stage2_rate,5,0.779,0.0,0.779,0.779,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,labeled_hard_negative,fpr,5,0.5693333333333334,0.01846919356959342,0.5464008006021127,0.592265866064554,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,labeled_hard_negative,alert_rate,5,0.5693333333333334,0.01846919356959342,0.5464008006021127,0.592265866064554,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,labeled_hard_negative,stage2_rate,5,0.5433333333333333,0.0,0.5433333333333333,0.5433333333333333,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,recall,5,0.6993333333333334,0.0158815056660955,0.6796138395104735,0.7190528271561932,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,fpr,5,0.062,0.008366600265340758,0.0516114936631643,0.0723885063368357,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,alert_rate,5,0.54,0.012119199643540817,0.5249520261155715,0.5550479738844286,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,stage2_rate,5,0.74,0.0,0.74,0.74,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,support_unlabeled,alert_rate,5,0.02917933130699088,0.003933793041199021,0.024294882111349548,0.03406378050263221,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v1,support_unlabeled,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,binary_test,recall,5,0.7452000000000001,0.019829271292712718,0.7205787077252233,0.7698212922747769,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,binary_test,fpr,5,0.0996,0.00792464510246358,0.08976025347772917,0.10943974652227081,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,binary_test,alert_rate,5,0.4224,0.012660963628413137,0.4066793372800321,0.4381206627199679,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,binary_test,stage2_rate,5,0.8030000000000002,1.2412670766236366e-16,0.803,0.8030000000000003,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,labeled_hard_negative,fpr,5,0.5073333333333333,0.029944392908634272,0.47015245871061395,0.5445142079560527,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,labeled_hard_negative,alert_rate,5,0.5073333333333333,0.029944392908634272,0.47015245871061395,0.5445142079560527,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,labeled_hard_negative,stage2_rate,5,0.65,0.0,0.65,0.65,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,recall,5,0.7233333333333334,0.016158932858054448,0.7032693681540952,0.7433972985125715,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,fpr,5,0.036000000000000004,0.005477225575051662,0.029199126193417434,0.042800873806582575,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,alert_rate,5,0.5515,0.0124498995979887,0.5360414078879259,0.5669585921120741,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,stage2_rate,5,0.7775,0.0,0.7775,0.7775,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,support_unlabeled,alert_rate,5,0.02917933130699088,0.003933793041199021,0.024294882111349548,0.03406378050263221,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,hybrid_v2,support_unlabeled,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,binary_test,recall,5,0.7163999999999999,0.021559220765139005,0.6896306917465997,0.7431693082534001,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,binary_test,fpr,5,0.0644,0.010990905331227268,0.050752988542549254,0.07804701145745074,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,binary_test,alert_rate,5,0.39039999999999997,0.014656056768449005,0.3722021019549862,0.40859789804501373,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,binary_test,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,labeled_hard_negative,fpr,5,0.292,0.04787715762471935,0.232552657041059,0.351447342958941,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,labeled_hard_negative,alert_rate,5,0.292,0.04787715762471935,0.232552657041059,0.351447342958941,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,labeled_hard_negative,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,positive_probe,recall,5,0.6913333333333334,0.017256238807393038,0.6699068828617867,0.71275978380488,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,positive_probe,fpr,5,0.022000000000000002,0.004472135954999578,0.016447109789604408,0.027552890210395597,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,positive_probe,alert_rate,5,0.524,0.013532368602724379,0.5071973450955741,0.5408026549044259,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,positive_probe,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,support_unlabeled,alert_rate,5,0.02917933130699088,0.003933793041199021,0.024294882111349548,0.03406378050263221,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_perchannel_rr,neural,support_unlabeled,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,binary_test,recall,3,0.7506666666666666,0.01700980109623078,0.7084119782946713,0.7929213550386619,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,binary_test,fpr,3,0.12,0.0034641016151377583,0.1113946945406077,0.12860530545939228,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,binary_test,alert_rate,3,0.43533333333333335,0.008621678104251717,0.41391589761625497,0.45675076905041173,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,binary_test,stage2_rate,3,0.779,0.0,0.779,0.779,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,labeled_hard_negative,fpr,3,0.5822222222222222,0.010715167512214413,0.5556042705177383,0.6088401739267061,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,labeled_hard_negative,alert_rate,3,0.5822222222222222,0.010715167512214413,0.5556042705177383,0.6088401739267061,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,labeled_hard_negative,stage2_rate,3,0.5433333333333333,0.0,0.5433333333333333,0.5433333333333333,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,positive_probe,recall,3,0.7133333333333334,0.008819171036882005,0.69142529797451,0.7352413686921567,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,positive_probe,fpr,3,0.07,0.0,0.07,0.07,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,positive_probe,alert_rate,3,0.5525000000000001,0.006614378277661503,0.5360689734808826,0.5689310265191176,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,positive_probe,stage2_rate,3,0.7399999999999999,1.3597399555105182e-16,0.7399999999999995,0.7400000000000002,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,support_unlabeled,alert_rate,3,0.0430597771023303,0.01813123623928397,-0.0019807105997710836,0.08810026480443167,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v1,support_unlabeled,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,binary_test,recall,3,0.7533333333333333,0.018147543451754948,0.7082523362697597,0.7984143303969069,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,binary_test,fpr,3,0.10266666666666668,0.006429100507328635,0.08669589564397635,0.11863743768935701,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,binary_test,alert_rate,3,0.428,0.01044030650891056,0.4020648408793042,0.45393515912069576,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,binary_test,stage2_rate,3,0.803,0.0,0.803,0.803,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,labeled_hard_negative,fpr,3,0.5255555555555556,0.023412563895228347,0.4673955226553754,0.5837155884557358,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,labeled_hard_negative,alert_rate,3,0.5255555555555556,0.023412563895228347,0.4673955226553754,0.5837155884557358,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,labeled_hard_negative,stage2_rate,3,0.65,0.0,0.65,0.65,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,positive_probe,recall,3,0.7355555555555555,0.016777409856157218,0.6938781590269002,0.7772329520842108,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,positive_probe,fpr,3,0.043333333333333335,0.005773502691896258,0.02899115756767953,0.05767550909898714,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,positive_probe,alert_rate,3,0.5625000000000001,0.013919410907075037,0.5279222664408146,0.5970777335591856,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,positive_probe,stage2_rate,3,0.7775,0.0,0.7775,0.7775,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,support_unlabeled,alert_rate,3,0.0430597771023303,0.01813123623928397,-0.0019807105997710836,0.08810026480443167,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,hybrid_v2,support_unlabeled,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,binary_test,recall,3,0.7253333333333334,0.025324559884296795,0.6624236390920517,0.7882430275746151,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,binary_test,fpr,3,0.068,0.010583005244258365,0.041710357569412077,0.09428964243058793,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,binary_test,alert_rate,3,0.39666666666666667,0.015307950004273391,0.35863961077193374,0.4346937225613996,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,binary_test,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,labeled_hard_negative,fpr,3,0.32,0.05174724898753341,0.19145270731232716,0.44854729268767285,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,labeled_hard_negative,alert_rate,3,0.32,0.05174724898753341,0.19145270731232716,0.44854729268767285,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,labeled_hard_negative,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,positive_probe,recall,3,0.7077777777777778,0.025458753860865747,0.6445347272186157,0.77102082833694,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,positive_probe,fpr,3,0.023333333333333334,0.005773502691896256,0.008991157567679531,0.037675509098987134,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,positive_probe,alert_rate,3,0.5366666666666667,0.020207259421636918,0.48646905148687836,0.5868642818464551,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,positive_probe,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,support_unlabeled,alert_rate,3,0.0430597771023303,0.01813123623928397,-0.0019807105997710836,0.08810026480443167,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,q_quint8,neural,support_unlabeled,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,binary_test,recall,1,0.748,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,binary_test,fpr,1,0.116,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,binary_test,alert_rate,1,0.432,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,binary_test,stage2_rate,1,0.779,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,labeled_hard_negative,fpr,1,0.6,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,labeled_hard_negative,alert_rate,1,0.6,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,labeled_hard_negative,stage2_rate,1,0.5433333333333333,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,positive_probe,recall,1,0.7166666666666667,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,positive_probe,fpr,1,0.07,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,positive_probe,alert_rate,1,0.555,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,positive_probe,stage2_rate,1,0.74,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,support_unlabeled,alert_rate,1,0.016717325227963525,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v1,support_unlabeled,stage2_rate,1,1.0,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,binary_test,recall,1,0.75,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,binary_test,fpr,1,0.102,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,binary_test,alert_rate,1,0.426,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,binary_test,stage2_rate,1,0.803,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,labeled_hard_negative,fpr,1,0.5533333333333333,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,labeled_hard_negative,alert_rate,1,0.5533333333333333,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,labeled_hard_negative,stage2_rate,1,0.65,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,positive_probe,recall,1,0.7366666666666667,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,positive_probe,fpr,1,0.04,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,positive_probe,alert_rate,1,0.5625,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,positive_probe,stage2_rate,1,0.7775,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,support_unlabeled,alert_rate,1,0.016717325227963525,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,hybrid_v2,support_unlabeled,stage2_rate,1,1.0,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,binary_test,recall,1,0.738,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,binary_test,fpr,1,0.062,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,binary_test,alert_rate,1,0.4,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,binary_test,stage2_rate,1,1.0,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,labeled_hard_negative,fpr,1,0.35333333333333333,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,labeled_hard_negative,alert_rate,1,0.35333333333333333,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,labeled_hard_negative,stage2_rate,1,1.0,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,positive_probe,recall,1,0.7133333333333334,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,positive_probe,fpr,1,0.02,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,positive_probe,alert_rate,1,0.54,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,positive_probe,stage2_rate,1,1.0,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,support_unlabeled,alert_rate,1,0.016717325227963525,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected,qint8,neural,support_unlabeled,stage2_rate,1,1.0,,,,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_R90,fp32,hybrid,binary_test,recall,10,0.8206,0.01833151506134841,0.8074864241036351,0.8337135758963649,all frozen source seeds
+saqs,source_R90,fp32,hybrid,binary_test,fpr,10,0.142,0.008692269873603527,0.13578192471720332,0.14821807528279665,all frozen source seeds
+saqs,source_R90,fp32,hybrid,binary_test,alert_rate,10,0.48129999999999995,0.011294541454466693,0.47322037177057563,0.48937962822942427,all frozen source seeds
+saqs,source_R90,fp32,hybrid,binary_test,stage2_rate,10,0.8030000000000002,1.1702778228589004e-16,0.803,0.8030000000000003,all frozen source seeds
+saqs,source_R90,fp32,hybrid,labeled_hard_negative,fpr,10,0.699,0.033849704121835446,0.674785380390783,0.723214619609217,all frozen source seeds
+saqs,source_R90,fp32,hybrid,labeled_hard_negative,alert_rate,10,0.699,0.033849704121835446,0.674785380390783,0.723214619609217,all frozen source seeds
+saqs,source_R90,fp32,hybrid,labeled_hard_negative,stage2_rate,10,0.6500000000000001,1.1702778228589004e-16,0.65,0.6500000000000002,all frozen source seeds
+saqs,source_R90,fp32,hybrid,positive_probe,recall,10,0.7916666666666667,0.01476147806176269,0.7811069413925894,0.8022263919407441,all frozen source seeds
+saqs,source_R90,fp32,hybrid,positive_probe,fpr,10,0.093,0.011595018087284059,0.08470542373620163,0.10129457626379837,all frozen source seeds
+saqs,source_R90,fp32,hybrid,positive_probe,alert_rate,10,0.617,0.012627131283250529,0.6079670944337053,0.6260329055662947,all frozen source seeds
+saqs,source_R90,fp32,hybrid,positive_probe,stage2_rate,10,0.7775,0.0,0.7775,0.7775,all frozen source seeds
+saqs,source_R90,fp32,hybrid,support_unlabeled,alert_rate,10,0.08768996960486322,0.027839633481135367,0.06777469553394883,0.10760524367577762,all frozen source seeds
+saqs,source_R90,fp32,hybrid,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,fp32,neural,binary_test,recall,10,0.8238000000000001,0.017874873736927782,0.8110130856286192,0.836586914371381,all frozen source seeds
+saqs,source_R90,fp32,neural,binary_test,fpr,10,0.13540000000000002,0.009617114374327095,0.1285203308166454,0.14227966918335463,all frozen source seeds
+saqs,source_R90,fp32,neural,binary_test,alert_rate,10,0.4796,0.011491059326469618,0.47137979135368824,0.4878202086463118,all frozen source seeds
+saqs,source_R90,fp32,neural,binary_test,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,fp32,neural,labeled_hard_negative,fpr,10,0.648,0.06049589313680519,0.6047238450606538,0.6912761549393462,all frozen source seeds
+saqs,source_R90,fp32,neural,labeled_hard_negative,alert_rate,10,0.648,0.06049589313680519,0.6047238450606538,0.6912761549393462,all frozen source seeds
+saqs,source_R90,fp32,neural,labeled_hard_negative,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,fp32,neural,positive_probe,recall,10,0.7949999999999999,0.020015426149613127,0.7806818266775746,0.8093181733224253,all frozen source seeds
+saqs,source_R90,fp32,neural,positive_probe,fpr,10,0.091,0.016633299933166198,0.07910125402343417,0.10289874597656583,all frozen source seeds
+saqs,source_R90,fp32,neural,positive_probe,alert_rate,10,0.619,0.017368553960150704,0.6065752849775751,0.6314247150224249,all frozen source seeds
+saqs,source_R90,fp32,neural,positive_probe,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,fp32,neural,support_unlabeled,alert_rate,10,0.1053191489361702,0.02501373870701253,0.08742539820752093,0.12321289966481946,all frozen source seeds
+saqs,source_R90,fp32,neural,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,qint8,hybrid,binary_test,recall,10,0.8068000000000002,0.01869521626275316,0.7934262479374942,0.8201737520625062,all frozen source seeds
+saqs,source_R90,qint8,hybrid,binary_test,fpr,10,0.1378,0.00954288565721431,0.13097343084205468,0.14462656915794533,all frozen source seeds
+saqs,source_R90,qint8,hybrid,binary_test,alert_rate,10,0.4723,0.011860766323377991,0.4638153189002576,0.4807846810997424,all frozen source seeds
+saqs,source_R90,qint8,hybrid,binary_test,stage2_rate,10,0.8030000000000002,1.1702778228589004e-16,0.803,0.8030000000000003,all frozen source seeds
+saqs,source_R90,qint8,hybrid,labeled_hard_negative,fpr,10,0.683,0.03297773285411736,0.6594091510589686,0.7065908489410315,all frozen source seeds
+saqs,source_R90,qint8,hybrid,labeled_hard_negative,alert_rate,10,0.683,0.03297773285411736,0.6594091510589686,0.7065908489410315,all frozen source seeds
+saqs,source_R90,qint8,hybrid,labeled_hard_negative,stage2_rate,10,0.6500000000000001,1.1702778228589004e-16,0.65,0.6500000000000002,all frozen source seeds
+saqs,source_R90,qint8,hybrid,positive_probe,recall,10,0.776,0.013407202781331872,0.7664090649003882,0.7855909350996119,all frozen source seeds
+saqs,source_R90,qint8,hybrid,positive_probe,fpr,10,0.086,0.011737877907772674,0.07760322797702685,0.09439677202297314,all frozen source seeds
+saqs,source_R90,qint8,hybrid,positive_probe,alert_rate,10,0.6035000000000001,0.010619688214715994,0.5959031326961601,0.6110968673038402,all frozen source seeds
+saqs,source_R90,qint8,hybrid,positive_probe,stage2_rate,10,0.7775,0.0,0.7775,0.7775,all frozen source seeds
+saqs,source_R90,qint8,hybrid,support_unlabeled,alert_rate,10,0.09042553191489362,0.027730646374703526,0.07058822252322894,0.1102628413065583,all frozen source seeds
+saqs,source_R90,qint8,hybrid,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,qint8,neural,binary_test,recall,10,0.805,0.023856049780110498,0.7879344100401964,0.8220655899598037,all frozen source seeds
+saqs,source_R90,qint8,neural,binary_test,fpr,10,0.1318,0.007146094504459524,0.12668799194538954,0.13691200805461046,all frozen source seeds
+saqs,source_R90,qint8,neural,binary_test,alert_rate,10,0.46840000000000004,0.013293273152655473,0.45889056524705857,0.4779094347529415,all frozen source seeds
+saqs,source_R90,qint8,neural,binary_test,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,qint8,neural,labeled_hard_negative,fpr,10,0.6263333333333333,0.04905149725254111,0.5912440060246599,0.6614226606420067,all frozen source seeds
+saqs,source_R90,qint8,neural,labeled_hard_negative,alert_rate,10,0.6263333333333333,0.04905149725254111,0.5912440060246599,0.6614226606420067,all frozen source seeds
+saqs,source_R90,qint8,neural,labeled_hard_negative,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,qint8,neural,positive_probe,recall,10,0.7776666666666667,0.018125079821024737,0.7647007656451068,0.7906325676882267,all frozen source seeds
+saqs,source_R90,qint8,neural,positive_probe,fpr,10,0.083,0.01567021236472421,0.07179020536659067,0.09420979463340934,all frozen source seeds
+saqs,source_R90,qint8,neural,positive_probe,alert_rate,10,0.6039999999999999,0.014962917124975628,0.5932961739009174,0.6147038260990824,all frozen source seeds
+saqs,source_R90,qint8,neural,positive_probe,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_R90,qint8,neural,support_unlabeled,alert_rate,10,0.10820668693009121,0.03000253025507183,0.08674416971500146,0.12966920414518096,all frozen source seeds
+saqs,source_R90,qint8,neural,support_unlabeled,stage2_rate,10,1.0,0.0,1.0,1.0,all frozen source seeds
+saqs,source_selected,q_perchannel_rr,hybrid_v1,binary_test,recall,5,0.776,0.028213471959331757,0.7409683476037663,0.8110316523962338,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,binary_test,fpr,5,0.1396,0.013885243966167823,0.12235919246093334,0.15684080753906665,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,binary_test,alert_rate,5,0.45780000000000004,0.019123284236762256,0.43405530643579476,0.4815446935642053,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,binary_test,stage2_rate,5,0.779,0.0,0.779,0.779,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,labeled_hard_negative,fpr,5,0.6900000000000001,0.03291402943021915,0.6491318346206777,0.7308681653793224,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,labeled_hard_negative,alert_rate,5,0.6900000000000001,0.03291402943021915,0.6491318346206777,0.7308681653793224,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,labeled_hard_negative,stage2_rate,5,0.5433333333333333,0.0,0.5433333333333333,0.5433333333333333,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,recall,5,0.7293333333333333,0.025210227201585365,0.6980307018305875,0.7606359648360791,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,fpr,5,0.094,0.01140175425099138,0.07984285223017726,0.10815714776982274,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,alert_rate,5,0.5705,0.021462176031334743,0.5438511886987799,0.5971488113012201,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,positive_probe,stage2_rate,5,0.74,0.0,0.74,0.74,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,support_unlabeled,alert_rate,5,0.08814589665653495,0.037795836217160754,0.04121616754368041,0.1350756257693895,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v1,support_unlabeled,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,binary_test,recall,5,0.7807999999999999,0.029141036357686376,0.7446166242843137,0.8169833757156861,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,binary_test,fpr,5,0.1308,0.015139352694220454,0.11200201080347727,0.14959798919652273,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,binary_test,alert_rate,5,0.4558,0.02025339477717254,0.43065208886377665,0.4809479111362233,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,binary_test,stage2_rate,5,0.8030000000000002,1.2412670766236366e-16,0.803,0.8030000000000003,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,labeled_hard_negative,fpr,5,0.6559999999999999,0.0418595535358683,0.6040244993936291,0.7079755006063707,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,labeled_hard_negative,alert_rate,5,0.6559999999999999,0.0418595535358683,0.6040244993936291,0.7079755006063707,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,labeled_hard_negative,stage2_rate,5,0.65,0.0,0.65,0.65,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,recall,5,0.7546666666666667,0.02328566559543067,0.7257536940226084,0.783579639310725,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,fpr,5,0.078,0.014832396974191328,0.05958314667008015,0.09641685332991985,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,alert_rate,5,0.5854999999999999,0.020493901531919205,0.5600534602850828,0.610946539714917,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,positive_probe,stage2_rate,5,0.7775,0.0,0.7775,0.7775,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,support_unlabeled,alert_rate,5,0.08814589665653495,0.037795836217160754,0.04121616754368041,0.1350756257693895,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,hybrid_v2,support_unlabeled,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,binary_test,recall,5,0.7604000000000001,0.03374611088703411,0.7184986690321776,0.8023013309678225,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,binary_test,fpr,5,0.11639999999999999,0.01796663574518056,0.09409147522636839,0.1387085247736316,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,binary_test,alert_rate,5,0.4384,0.02319051530259731,0.4096051720489714,0.4671948279510286,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,binary_test,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,labeled_hard_negative,fpr,5,0.5466666666666666,0.07214953607304454,0.4570811852376633,0.63625214809567,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,labeled_hard_negative,alert_rate,5,0.5466666666666666,0.07214953607304454,0.4570811852376633,0.63625214809567,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,labeled_hard_negative,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,positive_probe,recall,5,0.7313333333333333,0.02863564212655271,0.6957774874393456,0.7668891792273209,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,positive_probe,fpr,5,0.07,0.01870828693386971,0.046770593646148065,0.09322940635385195,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,positive_probe,alert_rate,5,0.5660000000000001,0.025470571253900072,0.5343741086603486,0.5976258913396515,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,positive_probe,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,support_unlabeled,alert_rate,5,0.08814589665653495,0.037795836217160754,0.04121616754368041,0.1350756257693895,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_perchannel_rr,neural,support_unlabeled,stage2_rate,5,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,binary_test,recall,3,0.8226666666666667,0.017009801096230726,0.7804119782946715,0.8649213550386619,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,binary_test,fpr,3,0.14666666666666664,0.006429100507328643,0.1306958956439763,0.16263743768935698,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,binary_test,alert_rate,3,0.48466666666666663,0.011239810200058252,0.4567454302761319,0.5125879030572014,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,binary_test,stage2_rate,3,0.779,0.0,0.779,0.779,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,labeled_hard_negative,fpr,3,0.7277777777777779,0.02219442706159797,0.6726437645240535,0.7829117910315022,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,labeled_hard_negative,alert_rate,3,0.7277777777777779,0.02219442706159797,0.6726437645240535,0.7829117910315022,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,labeled_hard_negative,stage2_rate,3,0.5433333333333333,0.0,0.5433333333333333,0.5433333333333333,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,positive_probe,recall,3,0.7711111111111112,0.015396007178390056,0.7328653090693676,0.8093569131528547,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,positive_probe,fpr,3,0.10666666666666667,0.02081665999466133,0.054955216541884865,0.15837811679144848,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,positive_probe,alert_rate,3,0.605,0.013919410907075096,0.5704222664408144,0.6395777335591856,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,positive_probe,stage2_rate,3,0.7399999999999999,1.3597399555105182e-16,0.7399999999999995,0.7400000000000002,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,support_unlabeled,alert_rate,3,0.09017223910840932,0.029871373835472274,0.015967632862840114,0.16437684535397853,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v1,support_unlabeled,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,binary_test,recall,3,0.8273333333333334,0.01803699901129154,0.7825269438831359,0.8721397227835308,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,binary_test,fpr,3,0.1386666666666667,0.007023769168568485,0.12121865679661267,0.1561146765367207,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,binary_test,alert_rate,3,0.48299999999999993,0.011532562594670807,0.45435152634581194,0.5116484736541879,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,binary_test,stage2_rate,3,0.803,0.0,0.803,0.803,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,labeled_hard_negative,fpr,3,0.6933333333333334,0.030550504633038898,0.6174416726623387,0.769224994004328,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,labeled_hard_negative,alert_rate,3,0.6933333333333334,0.030550504633038898,0.6174416726623387,0.769224994004328,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,labeled_hard_negative,stage2_rate,3,0.65,0.0,0.65,0.65,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,positive_probe,recall,3,0.7944444444444446,0.012619796324000605,0.763095132481775,0.8257937564071143,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,positive_probe,fpr,3,0.09000000000000001,0.019999999999999997,0.040317245765609105,0.13968275423439092,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,positive_probe,alert_rate,3,0.6183333333333333,0.010103629710818405,0.5932345257434393,0.6434321409232273,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,positive_probe,stage2_rate,3,0.7775,0.0,0.7775,0.7775,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,support_unlabeled,alert_rate,3,0.09017223910840932,0.029871373835472274,0.015967632862840114,0.16437684535397853,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,hybrid_v2,support_unlabeled,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,binary_test,recall,3,0.8133333333333334,0.021007935008784936,0.7611467297326574,0.8655199369340093,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,binary_test,fpr,3,0.12466666666666666,0.00808290376865476,0.10458762059475134,0.144745712738582,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,binary_test,alert_rate,3,0.46900000000000003,0.012489995996796777,0.437973129925131,0.500026870074869,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,binary_test,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,labeled_hard_negative,fpr,3,0.6122222222222222,0.02834966849371793,0.54179774160223,0.6826467028422144,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,labeled_hard_negative,alert_rate,3,0.6122222222222222,0.02834966849371793,0.54179774160223,0.6826467028422144,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,labeled_hard_negative,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,positive_probe,recall,3,0.7811111111111111,0.01575271875417537,0.7419791883917524,0.8202430338304698,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,positive_probe,fpr,3,0.08333333333333333,0.02081665999466133,0.03162188320855152,0.13504478345811513,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,positive_probe,alert_rate,3,0.6066666666666666,0.012583057392117928,0.5754086192701751,0.6379247140631581,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,positive_probe,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,support_unlabeled,alert_rate,3,0.09017223910840932,0.029871373835472274,0.015967632862840114,0.16437684535397853,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+saqs,source_selected,q_quint8,neural,support_unlabeled,stage2_rate,3,1.0,0.0,1.0,1.0,development-accepted seeds; do not compare unequal accepted groups as a paired experiment
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,recall,9,0.7446666666666667,0.017606816861659026,0.731132869169744,0.7582004641635894,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,fpr,9,0.11777777777777779,0.004055175020198812,0.11466069432259275,0.12089486123296282,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,alert_rate,9,0.43122222222222223,0.010096754153907315,0.42346116994520555,0.4389832744992389,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,stage2_rate,9,0.779,0.0,0.779,0.779,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,labeled_hard_negative,fpr,9,0.577037037037037,0.0176733041339854,0.5634521328984733,0.5906219411756007,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,labeled_hard_negative,alert_rate,9,0.577037037037037,0.0176733041339854,0.5634521328984733,0.5906219411756007,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,labeled_hard_negative,stage2_rate,9,0.5433333333333333,0.0,0.5433333333333333,0.5433333333333333,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,recall,9,0.705925925925926,0.014412357523414302,0.6948476072435812,0.7170042446082707,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,fpr,9,0.06555555555555556,0.007264831572567792,0.05997131167292119,0.07113979943818993,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,alert_rate,9,0.5458333333333334,0.011524430571616116,0.5369748718153267,0.5546917948513401,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,stage2_rate,9,0.74,1.1775693440128312e-16,0.74,0.74,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,support_unlabeled,alert_rate,9,0.032421479229989864,0.013029200759484988,0.02240634895339732,0.04243660950658241,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v1,support_unlabeled,stage2_rate,9,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,recall,9,0.7484444444444445,0.0171690936795679,0.7352471107701807,0.7616417781187083,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,fpr,9,0.10088888888888889,0.006641619615057093,0.09578368812329731,0.10599408965448047,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,alert_rate,9,0.4246666666666667,0.010723805294763617,0.4164236202150503,0.4329097131182831,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,stage2_rate,9,0.803,0.0,0.803,0.803,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,labeled_hard_negative,fpr,9,0.5185185185185186,0.02887285880041397,0.4963248745888784,0.5407121624481588,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,labeled_hard_negative,alert_rate,9,0.5185185185185186,0.02887285880041397,0.4963248745888784,0.5407121624481588,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,labeled_hard_negative,stage2_rate,9,0.65,0.0,0.65,0.65,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,recall,9,0.7288888888888887,0.015634719199411434,0.7168709798466891,0.7409067979310883,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,fpr,9,0.03888888888888889,0.006009252125773318,0.03426976880504966,0.04350800897272812,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,alert_rate,9,0.5563888888888889,0.012631255326020082,0.5466796465506816,0.5660981312270963,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,stage2_rate,9,0.7775,0.0,0.7775,0.7775,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,support_unlabeled,alert_rate,9,0.032421479229989864,0.013029200759484988,0.02240634895339732,0.04243660950658241,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,hybrid_v2,support_unlabeled,stage2_rate,9,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,binary_test,recall,9,0.7217777777777779,0.021176506899024807,0.7055000736183342,0.7380554819372215,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,binary_test,fpr,9,0.06533333333333334,0.009643650760992956,0.05792056715556182,0.07274609951110486,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,binary_test,alert_rate,9,0.3935555555555556,0.013454656360449267,0.38321339115390657,0.40389771995720464,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,binary_test,stage2_rate,9,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,labeled_hard_negative,fpr,9,0.30814814814814817,0.047816521758555594,0.27139311584604514,0.3449031804502512,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,labeled_hard_negative,alert_rate,9,0.30814814814814817,0.047816521758555594,0.27139311584604514,0.3449031804502512,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,labeled_hard_negative,stage2_rate,9,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,recall,9,0.6992592592592594,0.020053939608644496,0.6838444367043698,0.7146740818141489,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,fpr,9,0.02222222222222222,0.0044095855184409834,0.018832714742201783,0.025611729702242656,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,alert_rate,9,0.53,0.015662455107677106,0.5179607712514157,0.5420392287485843,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,stage2_rate,9,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,support_unlabeled,alert_rate,9,0.032421479229989864,0.013029200759484988,0.02240634895339732,0.04243660950658241,development-accepted seeds only; rejected counts retained separately
+ce,source_selected_procedure,dev-selected-per-seed,neural,support_unlabeled,stage2_rate,9,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,recall,8,0.7935,0.03347920463298287,0.765510684487304,0.821489315512696,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,fpr,8,0.14225000000000002,0.011634308868907633,0.13252347437689113,0.1519765256231089,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,alert_rate,8,0.46787500000000004,0.02093825958110449,0.45037017692768294,0.48537982307231714,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,binary_test,stage2_rate,8,0.779,0.0,0.779,0.779,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,labeled_hard_negative,fpr,8,0.7041666666666666,0.03379442989700361,0.675913816238223,0.7324195170951102,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,labeled_hard_negative,alert_rate,8,0.7041666666666666,0.03379442989700361,0.675913816238223,0.7324195170951102,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,labeled_hard_negative,stage2_rate,8,0.5433333333333333,0.0,0.5433333333333333,0.5433333333333333,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,recall,8,0.745,0.02997353329877374,0.7199414990670603,0.7700585009329397,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,fpr,8,0.09875,0.015526475085202971,0.08576954198960787,0.11173045801039214,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,alert_rate,8,0.5834375,0.02524655209839837,0.5623308542467245,0.6045441457532756,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,positive_probe,stage2_rate,8,0.74,1.18687833744435e-16,0.74,0.74,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,support_unlabeled,alert_rate,8,0.08890577507598785,0.03274664161745192,0.06152889757068783,0.11628265258128787,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v1,support_unlabeled,stage2_rate,8,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,recall,8,0.7982499999999999,0.034032547446735235,0.7697980783181735,0.8267019216818263,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,fpr,8,0.13375,0.012713884423843767,0.12312092662648451,0.1443790733735155,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,alert_rate,8,0.46599999999999997,0.021692658402589302,0.44786448372966875,0.4841355162703312,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,binary_test,stage2_rate,8,0.803,0.0,0.803,0.803,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,labeled_hard_negative,fpr,8,0.6699999999999999,0.040512588676482296,0.6361306282770818,0.7038693717229181,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,labeled_hard_negative,alert_rate,8,0.6699999999999999,0.040512588676482296,0.6361306282770818,0.7038693717229181,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,labeled_hard_negative,stage2_rate,8,0.65,0.0,0.65,0.65,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,recall,8,0.7695833333333333,0.027913557040740403,0.7462470156501699,0.7929196510164966,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,fpr,8,0.0825,0.0166904592079256,0.06854642691056695,0.09645357308943306,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,alert_rate,8,0.5978125,0.02362041716699469,0.5780653370707708,0.6175596629292291,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,positive_probe,stage2_rate,8,0.7775,0.0,0.7775,0.7775,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,support_unlabeled,alert_rate,8,0.08890577507598785,0.03274664161745192,0.06152889757068783,0.11628265258128787,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,hybrid_v2,support_unlabeled,stage2_rate,8,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,binary_test,recall,8,0.7802499999999999,0.039081416848128,0.747577117868033,0.8129228821319667,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,binary_test,fpr,8,0.1195,0.014880476182856896,0.107059610587319,0.131940389412681,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,binary_test,alert_rate,8,0.449875,0.024549876345338863,0.42935078975187435,0.4703992102481257,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,binary_test,stage2_rate,8,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,labeled_hard_negative,fpr,8,0.57125,0.06599512969043354,0.5160766908531315,0.6264233091468686,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,labeled_hard_negative,alert_rate,8,0.57125,0.06599512969043354,0.5160766908531315,0.6264233091468686,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,labeled_hard_negative,stage2_rate,8,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,recall,8,0.75,0.034686807336141545,0.7210011033624467,0.7789988966375533,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,fpr,8,0.07500000000000001,0.019272482233188632,0.05888780164131742,0.0911121983586826,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,alert_rate,8,0.5812499999999999,0.029307483198469486,0.5567483308857683,0.6057516691142316,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,positive_probe,stage2_rate,8,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,support_unlabeled,alert_rate,8,0.08890577507598785,0.03274664161745192,0.06152889757068783,0.11628265258128787,development-accepted seeds only; rejected counts retained separately
+saqs,source_selected_procedure,dev-selected-per-seed,neural,support_unlabeled,stage2_rate,8,1.0,0.0,1.0,1.0,development-accepted seeds only; rejected counts retained separately

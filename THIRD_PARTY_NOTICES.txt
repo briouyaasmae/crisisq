@@ -1,0 +1,16 @@
+CrisisQ distribution notices
+
+The project application and analysis code are supplied under the MIT license.
+The manuscript and its prose/figures retain their authors' copyright; no separate
+open manuscript license is granted by the software license.
+
+The unmodified Elsevier elsarticle class, .ins/.dtx source and numeric .bst style
+are distributed under the LaTeX Project Public License, version 1.3 or later.
+See paper/ELSARTICLE_UPSTREAM_README.txt and the notices in those source files.
+
+Flutter packages, ONNX Runtime and the Gradle wrapper retain their respective
+upstream licenses. See app/third_party/ and the package dependency metadata.
+The tokenizer vocabulary, pretrained models and source datasets retain their
+upstream terms. No clinical endorsement or source-data redistribution license
+is created by this package. Public reconstruction checks pinned source hashes;
+a local reconstruction does not change the original dataset's terms.

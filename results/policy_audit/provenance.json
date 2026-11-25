@@ -1,0 +1,46 @@
+{
+  "source_sha256": {
+    "final_results.csv": "e02e31c33ae8a5936f52b405adac3e2e33a1b5dbf32c8b809e4b3083edf80c8a",
+    "development_acceptance.csv": "483d9a4571dc7081131b9de87707fec069d9a2b221719e4f027cebdb5268b278"
+  },
+  "policies": {
+    "selected": [
+      "dev_selected",
+      null,
+      "hybrid_v2"
+    ],
+    "fixed_signed_070": [
+      "fixed_0.70",
+      "qint8",
+      "hybrid_v2"
+    ],
+    "fixed_unsigned_070": [
+      "fixed_0.70",
+      "q_quint8",
+      "hybrid_v2"
+    ],
+    "signed_calibration_R90": [
+      "calibration_R90",
+      "qint8",
+      "hybrid"
+    ],
+    "fp32_070": [
+      "fixed_0.70",
+      "fp32",
+      "hybrid_v2"
+    ]
+  },
+  "bootstrap_seed": 20261115,
+  "bootstrap_samples": 10000,
+  "training": false,
+  "inference": false,
+  "threshold_fitting": false,
+  "scope": "post-hoc existing-policy comparison; previously inspected legacy sets; conditional on constrained acceptance",
+  "warnings": [
+    "Rejected seeds have no deployed selected policy; never imputed as zero errors.",
+    "Comparators differ in thresholds and possibly quantizer: this is a policy comparison, not an isolated budget effect.",
+    "Accepted-seed comparisons do not estimate unconditional deployment benefit.",
+    "Seed bootstrap does not measure unseen-source uncertainty.",
+    "Source-negative stress alerts are not adjudicated false positives."
+  ]
+}
