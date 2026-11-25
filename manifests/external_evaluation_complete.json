@@ -1,0 +1,9 @@
+{
+  "evaluation_rows_hash": "f5762e095d91b17eb58123d4304944dd29d99d2f2e8e0c0d2ae5b7528dbdc057",
+  "independence_status": "new-source external no-retuning evaluation; historical contamination remains incompletely auditable",
+  "model_bytes_reverified": true,
+  "new_models_trained": 0,
+  "plan_hash": "fe7125e21acb826cd46fa837388b55ff75dfe1b4177a68cdebf133d14ab1dfbf",
+  "result_rows": 524,
+  "thresholds_reselected": 0
+}

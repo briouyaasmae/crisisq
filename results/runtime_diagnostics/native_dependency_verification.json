@@ -1,0 +1,20 @@
+[
+  {
+    "package": "flutter_onnxruntime",
+    "version": "1.9.0",
+    "relative_file": "android/build.gradle",
+    "sha256": "8d1c2edb54145f24c143feee01c68f3fd69378a5ff37925a9296266e7fb79c9b",
+    "dependency_declaration": [
+      "implementation 'com.microsoft.onnxruntime:onnxruntime-android:1.28.0'"
+    ]
+  },
+  {
+    "package": "flutter_onnxruntime",
+    "version": "1.9.0",
+    "relative_file": "ios/flutter_onnxruntime.podspec",
+    "sha256": "18a96059a7a1e7f87f7ea3c9c6af02c6c8952f8795d1b9e6447a49f9fa4a2296",
+    "dependency_declaration": [
+      "s.dependency 'onnxruntime-objc', '1.28.0'"
+    ]
+  }
+]

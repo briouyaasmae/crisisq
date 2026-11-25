@@ -1,0 +1,27 @@
+CrisisQ: verified fusion localization and SDCNL findings
+
+Both archives passed ZIP integrity checks. Verified 28 fusion jobs (47,600 message-model-condition outputs) and 28 SDCNL model jobs (53,060 outputs). Plan/code/job/output hashes, probability reconstruction from saved logits, within-session repeat checks and summary counts checked. All32 CE-SAQs paired-seed interval rows independently reproduced. Fusion optimized-graph replay checks are16 inputs/job, all with zero logit difference. These checks are not independent reruns of model inference.
+
+FUSION
+New BASIC/EXTENDED baseline probability arrays exactly equal corresponding earlier runtime-matrix arrays for both primary graphs and both runtimes.
+QUInt8 BASIC versus EXTENDED changes9 neural decisions at each runtime; FP32 changes0.
+Disabling SkipLayerNormFusion changes graph from6 SkipLayerNormalization nodes to0, adding6Add and6LayerNormalization nodes. Relative to BASIC, neural disagreements fall9->4 in ORT1.28 and9->2 in1.31:5/7 recoveries, zero new disagreements with BASIC. Relative to EXTENDED, hybrid decisions change5/4. Max probability change vsEXTENDED is0.1431268403/0.1508838759.
+This is partial localization of an optimization pathway, not full recovery, correctness validation or unique kernel blame. Cross-runtime neural disagreements are10 with EXTENDED versus12 with SkipLayerNormFusion disabled (hybrid7vs8). It is not a portability fix.
+Disabling DynamicQuantizeMatMulFusion, MatMulIntegerToFloatFusion or both demonstrably alters graph operators but changes none of the1700 probabilities at either runtime. Removing these fusions does not explain/remove the observed differences through the tested interventions.
+Disabling MatMulScaleFusion removes6FusedMatMul nodes and adds6MatMul plus12Mul nodes. Changes7/6neural decisions (1.28/1.31), with3new disagreements vsBASIC at each runtime. Automated generic 'requested target not established' label reflects an omitted FusedMatMul mapping in the analyzer, not an unchanged graph. Inspect actual operator-count deltas.
+Attention/BiasGelu/Gelu/LayerNorm/MatMulAdd disable requests leave optimized graph unchanged; they are unverified/no-op interventions here, not evidence those operator families can never matter.
+
+SDCNL
+Original published test:379posts=193source-positive and186source-negative. All379 remain primary-eligible. Secondary clean all-post panel1882/1895. Exclusion categories overlap:7nonrepresentative duplicates,8conflicting-label rows,2empty/removed rows. No exact known overlaps detected among2626recoverable hashes, but original training membership/texts remain incompletely available; no near-duplicate audit. No guarantee of independent training exclusion.
+SAQS seed42 primary results:
+FP32 neural:167/193recall86.53%;97/186source-negative alerts52.15%.
+FP32 hybrid:168/193recall87.05%;97/186alerts52.15%.
+QUInt8 neural:160/193recall82.90%;90/186alerts48.39%.
+QUInt8 hybrid:162/193recall83.94%;91/186alerts48.92%.
+Hybrid compression loses6source positives, gains0, and removes6source-negative alerts. Source-label accuracy is identical FP32/QUInt8 hybrid257/379=67.81%, concealing that exchange. Hybrid routing compared with QUInt8 neural recovers2source positives and adds1source-negative alert. Across all1895posts, gate has407crisis exits,0safe exits,1488neural routes; this dataset supplies no evidence for safe-exit alert suppression.
+Seven jointly development-accepted available compressed CE/SAQS pairs: hybrid SAQS-minus-CE recall+5.625pp [3.553,7.624]; source-negative alerts+5.684pp [3.456,7.757]. Neural:+6.440pprecall and+7.373ppalerts. Conditional selected-system comparisons; quantizers/thresholds can differ, not pure causal loss ablations.
+197/379primary posts (51.98%) and991/1895all posts (52.30%) exceed128tokens. Gate sees full raw title/body; neural sees first128tokens. Report existing behavior, not an inferred explanation of errors.
+Labels are subreddit membership, not adjudicated crisis truth. Say 'alerts on source-negative/depression posts', not confirmed false positives or real-world false-alarm estimates.
+
+INTERPRETATION
+These results strengthen the reproducible deployment/numerical audit, provide partial graph-level mechanism localization and add a second corpus with multiseed frozen-threshold results. They do not demonstrate a generally superior classifier, clinical safety, complete dataset independence or a new quantizer. Integrate now; no broad additional experiment is necessary for these defensible claims. No manuscript/reviewer files changed in this audit.

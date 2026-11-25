@@ -1,0 +1,13 @@
+{
+  "arm": "saqs",
+  "seed": 42,
+  "variant": "q_quint8",
+  "tau": 0.6455836149936347,
+  "sha256": {
+    "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+    "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+    "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+    "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+    "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+  }
+}

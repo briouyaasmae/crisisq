@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "run_id": "2026-11-13T164920090852Z",
+  "model_outputs": 3400,
+  "unique_labeled_messages": 1700,
+  "derived_system_decisions": 6800,
+  "context": {
+    "protocol": "full_labeled_device_evaluation_v1",
+    "packet_manifest_sha256": "b0f6f391c1277d826658bc11339ac47317d9766f0ae8c4b96be54fae77886f19",
+    "cases_sha256": "a24de8c2b432ddbe3880a579abc9106cde59d38b9f545eeae30f73ad955b1372",
+    "source_external_hash": "fe7125e21acb826cd46fa837388b55ff75dfe1b4177a68cdebf133d14ab1dfbf",
+    "source_evaluation_rows_hash": "f5762e095d91b17eb58123d4304944dd29d99d2f2e8e0c0d2ae5b7528dbdc057",
+    "model_hashes": {
+      "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+      "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+      "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+      "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+      "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+    },
+    "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+    "device_id": "samsung SM-A225F",
+    "device": {
+      "model": "samsung SM-A225F",
+      "os": "Android 13 / SDK 33",
+      "physical": true
+    },
+    "threads": 4,
+    "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+    "session_configs": {},
+    "provider": "CPUExecutionProvider",
+    "build_mode": "release",
+    "tau": 0.6455836149936347,
+    "models": [
+      "fp32",
+      "q_quint8"
+    ],
+    "case_count": 1700,
+    "required_neural_forward_passes": 3400,
+    "derived_configuration_decisions": 6800,
+    "chunk_size": 25,
+    "input_scope": "saved tokenizer IDs; classification only; no pipeline timing claim",
+    "selection_scope": "same frozen source labels, groups and partitions; previously inspected data; no retuning"
+  },
+  "kaggle_drift": {
+    "fp32": {
+      "probability_mismatches": 0,
+      "changed_decisions": 0,
+      "max_absolute_difference": 2.0218326740595316e-06
+    },
+    "q_quint8": {
+      "probability_mismatches": 1388,
+      "changed_decisions": 12,
+      "max_absolute_difference": 0.17072058229381593
+    }
+  },
+  "thermal_states": [
+    "none"
+  ],
+  "scope": "Post-hoc full frozen-source device evaluation. Same inspected source data and incomplete historical overlap audit; no new independent or clinical validation, no retraining or threshold tuning, no pipeline latency measurements."
+}

@@ -1,0 +1,283 @@
+{
+  "arms": {
+    "ce": {
+      "aug": false,
+      "loss": "ce"
+    },
+    "ce_aug": {
+      "aug": true,
+      "loss": "ce"
+    },
+    "saqs": {
+      "aug": true,
+      "loss": "saqs"
+    },
+    "saqs_loss": {
+      "aug": false,
+      "loss": "saqs"
+    }
+  },
+  "base_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+  "batch": 8,
+  "budgets": {
+    "cal_fpr_increase": 0.1,
+    "hn_alert_rate": 0.15,
+    "hpf_cal": 0.01,
+    "hpf_probe": 0.0,
+    "probe_fpr_increase": 0.05,
+    "recall_drop": 0.02
+  },
+  "default_tau": 0.7,
+  "environment": {
+    "cpu_count": 4,
+    "ort_build": "ORT Build Info: git-branch=HEAD, git-commit-id=6af1a93, fp8-kv-cache=1, build type=Release",
+    "ort_providers": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "torch_gpu": "Tesla T4"
+  },
+  "epochs": 2,
+  "factorial_seeds": [
+    42,
+    123,
+    777
+  ],
+  "final_history": {
+    "conflict": "previously_observed",
+    "hn_final": "previously_observed",
+    "probe_final": "previously_observed",
+    "test": "previously_observed"
+  },
+  "implementation_hash": "30577c225cc2aafed10568f16414603b2cdb910df5c54e247a56bbd182b28746",
+  "inference_batch": 1,
+  "lr": 2e-05,
+  "max_length": 128,
+  "min_cal_recall": 0.85,
+  "model_id": "distilbert-base-uncased",
+  "rules": {
+    "contrast": "\\b(?:but|however|although|though|yet|except|until|still)\\b",
+    "crisis": [
+      [
+        "C01",
+        "explicit_intent",
+        "\\bkill(?:ing)? myself\\b"
+      ],
+      [
+        "C02",
+        "explicit_intent",
+        "\\bend(?:ing)? my (?:own )?life\\b"
+      ],
+      [
+        "C03",
+        "explicit_intent",
+        "\\btak(?:e|ing) my (?:own )?life\\b"
+      ],
+      [
+        "C04",
+        "explicit_intent",
+        "\\b(?:end|ending) it all\\b"
+      ],
+      [
+        "C05",
+        "explicit_intent",
+        "\\bunalive myself\\b"
+      ],
+      [
+        "C06",
+        "explicit_wish_dead",
+        "\\bi (?:really |just |actually )?(?:want|wanna|need) to die\\b"
+      ],
+      [
+        "C07",
+        "explicit_wish_dead",
+        "\\bi wish (?:i was|i were|i am) dead\\b|\\bbetter off dead\\b"
+      ],
+      [
+        "C08",
+        "self_harm_intent",
+        "\\b(?:hurt|harm|hurting|harming) myself\\b"
+      ],
+      [
+        "C09",
+        "method_mention",
+        "\\bi (?:might |may |will |could |am going to |am thinking (?:of|about) |keep thinking about |thinking about )overdos(?:e|ing)\\b"
+      ],
+      [
+        "C10",
+        "method_mention",
+        "\\bhang(?:ing)? myself\\b|\\bslit my wrists\\b|\\bbought the pills\\b|\\btook too many (?:pills|tablets)\\b"
+      ],
+      [
+        "C11",
+        "preparation",
+        "\\bsaid my goodbyes\\b|\\bwriting my last (?:note|message|letter)\\b|\\bpainless ways? to go\\b"
+      ],
+      [
+        "C12",
+        "explicit_intent",
+        "\\bno reason to live\\b|\\bend my suffering\\b|\\bdisappear permanently\\b"
+      ],
+      [
+        "C13",
+        "explicit_intent",
+        "\\bi (?:am|m) going to (?:die|jump)\\b"
+      ]
+    ],
+    "negators": [
+      "aint",
+      "arent",
+      "cannot",
+      "cant",
+      "didnt",
+      "dont",
+      "isnt",
+      "never",
+      "no",
+      "nobody",
+      "not",
+      "without",
+      "wont",
+      "wouldnt"
+    ],
+    "risk": "\\b(?:tonight|pills?|plan|planning|goodbye|die|dies|dead|dying|kill|disappear|gone|hurt|harm|hopeless|worthless|burden|no point|never wake|not be alive|stay alive|staying alive|leave this world|give away|giving away|swallow|be here anymore|exist|existing|suicide|suicidal|end it|ending)\\b",
+    "safe": [
+      [
+        "S01",
+        "third_party_support",
+        "\\b(?:support|help|helping|supporting) (?:a |my |an? )?(?:suicidal )?(?:friend|sister|brother|colleague|someone)\\b.*\\bsuicidal\\b|\\b(?:my|a) (?:friend|sister|brother|colleague)\\b.{0,30}\\bis suicidal\\b|\\bsomeone is suicidal\\b"
+      ],
+      [
+        "S02",
+        "third_party_support",
+        "\\bhow (?:can|do) i (?:support|help|ask) (?:a |an |my )?(?:suicidal|someone)"
+      ],
+      [
+        "S03",
+        "prevention_research",
+        "\\bsuicide prevention\\b"
+      ],
+      [
+        "S04",
+        "prevention_research",
+        "\\bresearch(?:ing)? (?:on |about )?suicide\\b"
+      ],
+      [
+        "S05",
+        "explicit_negation",
+        "\\bi (?:do not|dont|am not|m not|am never) (?:want to die|suicidal)\\b|\\bnot suicidal\\b|\\bim not suicidal\\b"
+      ],
+      [
+        "S06",
+        "idiom",
+        "\\bdying of embarrassment\\b|\\bnot literally\\b"
+      ],
+      [
+        "S07",
+        "prevention_research",
+        "\\bprevention hotline\\b|\\bcrisis hotlines?\\b"
+      ]
+    ],
+    "source": "def stage1_v2(text, return_trace=False):\n    t = normalize_s1(text)\n    aff, neg = [], []\n    for rid, cat, rx in _C:\n        for m in rx.finditer(t):\n            (neg if _is_negated(t, m.start()) else aff).append(rid)\n    safe_hits, spans = [], []\n    for rid, cat, rx in _S:\n        for m in rx.finditer(t):\n            safe_hits.append(rid); spans.append(m.span())\n    trace = dict(crisis_affirmed=sorted(set(aff)), crisis_negated=sorted(set(neg)), safe=sorted(set(safe_hits)))\n    if aff and safe_hits:\n        out = (None, \"conflict_to_stage2\")\n    elif aff:\n        out = (1, \"crisis\")\n    elif neg:                                   # crisis words under negation, e.g. \"I would never hurt myself\"\n        out = (None, \"negated_crisis_to_stage2\")\n    elif safe_hits:\n        resid = t\n        for a, b in sorted(spans, reverse=True):\n            resid = resid[:a] + \" \" + resid[b:]\n        if V2_CONTRAST.search(t) or V2_RISK_CUES.search(resid):\n            out = (None, \"safe_with_residual_risk_to_stage2\")\n        else:\n            out = (0, \"safe_context\")\n    else:\n        out = (None, \"uncertain\")\n    return (out + (trace,)) if return_trace else out\ndef _is_negated(t, start):\n    prev = t[:start].split()[-4:]\n    return any(w in V2_NEGATORS for w in prev)\ndef normalize_s1(t):\n    t = str(t).lower()\n    for ch in [\"'\", \"\u2019\", \"`\", \"\u2018\"]:\n        t = t.replace(ch, \"\")\n    t = re.sub(r\"[^a-z0-9\\s]\", \" \", t)\n    return re.sub(r\"\\s+\", \" \", t).strip()\n",
+    "v1_crisis": [
+      "kill myself",
+      "end my life",
+      "take my own life",
+      "take my life",
+      "unalive myself",
+      "overdose",
+      "overdosing",
+      "want to die",
+      "no reason to live",
+      "ending it all",
+      "end it all",
+      "better off dead",
+      "world would be better without me",
+      "not waking up",
+      "hurt myself",
+      "harm myself",
+      "self harm",
+      "self-harm",
+      "hang myself",
+      "bought the pills",
+      "took too many",
+      "slit my wrists",
+      "loaded the gun",
+      "want to end it",
+      "end my suffering",
+      "want to disappear permanently",
+      "painless ways to go",
+      "writing my last",
+      "goodbye to everyone",
+      "said my goodbyes",
+      "take my own life",
+      "end it tonight"
+    ],
+    "v1_safe": [
+      "how can i support a suicidal",
+      "support a suicidal friend",
+      "help a suicidal friend",
+      "my sister is suicidal",
+      "my brother is suicidal",
+      "my friend is suicidal",
+      "suicide prevention resources",
+      "researching suicide prevention",
+      "research on suicide",
+      "i dont want to die",
+      "i do not want to die",
+      "i am not suicidal",
+      "im not suicidal",
+      "not suicidal",
+      "dying of embarrassment",
+      "suicide prevention for a paper",
+      "not literally",
+      "prevention hotline",
+      "how do i ask someone if they are suicidal",
+      "he said he wants to kill himself",
+      "she said she wants to end her life"
+    ]
+  },
+  "seeds": [
+    42,
+    123,
+    777,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "selection": "hybrid constraints; choose dev HN alert rate, cal FPR, cal recall, file size, fixed variant order",
+  "smoke": false,
+  "splits": {
+    "aug": "6602ea131a7f0065156e1df9a42e5211b6ac0e1b3cba646274cc740e1b42edee",
+    "cal": "a4b6398b1f6d450ce13439fc149b29ff676485d428093727ee251739bd28519f",
+    "conflict": "f206904de9eba824c7ce741d31a4280d4ac1eb493e5a03f0ae1b97eebad913d0",
+    "hn_dev": "2ebde81c73fa09549c4519ff172c34b66bfbea7d7d1d6876f0a7e5873636201b",
+    "hn_final": "b0640cca865c8a35cd609bca0803cdb39006b4d737db77d711297dee521cba1f",
+    "probe_dev": "94ea29de81d58217d98d5ffb28b174be8d2173764776fc50a7c62f0f6814a6ff",
+    "probe_final": "235e705477238cd387eecf64713a6ce88762c313191aad3817a0e259361d2df9",
+    "test": "33cc9101826414e567ded393f2a5668416022888f83012fdf7a8a92f9acaf7fe",
+    "train": "16bf218b480c06b98451755ecdd5848801234a667de376e77ca20bfb61fd5e35"
+  },
+  "variants": [
+    "qint8",
+    "q_perchannel_rr",
+    "q_quint8"
+  ],
+  "version": "nonclinical_v1_compat",
+  "versions": {
+    "numpy": "2.1.3",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.1",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2"
+  }
+}

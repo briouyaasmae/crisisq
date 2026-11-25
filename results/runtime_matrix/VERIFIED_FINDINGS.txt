@@ -1,0 +1,55 @@
+CrisisQ runtime matrix — independently checked findings
+
+Completion: 448/448 jobs, 28 artifacts, 16 settings, seven jointly accepted
+CE/SAQS seed pairs; 160896 recorded forward outputs. Both runtime versions
+account for 224 jobs. Model identities, plan/job hashes, output checksums, case
+order, finite scores and softmax consistency were checked. All implementation
+hashes match the delivered v1.1 source. The 16-case repeat checks per job show
+zero probability differences and zero changed decisions.
+
+Matched common panel (same 256 messages for every artifact):
+- All 14 FP32 artifacts preserve decisions across the tested suite.
+- 13/14 selected quantized artifacts change a decision somewhere in the suite.
+- Runtime-wheel changes affect decisions for 13/14 quantized artifacts.
+- BASIC-to-EXTENDED optimization changes affect 12/14 quantized artifacts.
+- For every artifact/runtime, DISABLED and BASIC probabilities are identical;
+  EXTENDED and ALL probabilities are identical. This brackets the observed
+  effect at an optimization-level boundary, not a uniquely identified operator.
+- One versus four threads produces identical saved probabilities for all models
+  and optimization levels. This is a tested null result, not a universal rule.
+- Largest matched runtime-wheel probability difference: about 0.22582 for a
+  quantized artifact versus 0.000003145 among FP32 artifacts.
+
+Primary QUInt8 pair, full 1700-message packet:
+- 21 unique messages have unstable neural decisions across the finite host suite:
+  main 5/1000, enriched source negatives 10/300, probe 6/400.
+- Hybrid routing leaves 15 unstable messages: main 2, stress 9, probe 4. It masks
+  six disagreements through fixed rule exits; this does not prove correctness.
+- Primary FP32 has zero unstable decisions on all 1700 cases.
+- The 1.31.1 EXTENDED/ALL host outputs exactly reproduce the original Kaggle
+  reference. Against the historical Android endpoint, none of the tested host
+  settings agrees on every neural decision: differences range from 6 to 17.
+- Matching runtime version alone is therefore insufficient to reproduce Android
+  in these observations. CPU/OS/build/kernel causes remain unisolated.
+- Main hybrid recall across host settings: 84.2%–84.6%; probe 79.67%–80.0%.
+- Alert rate on keyword-enriched source-negative messages: 205/300–210/300
+  (68.33%–70.0%). Source labels remain unaudited.
+
+Interpretation for the manuscript:
+This expands the finding from one primary device observation to a controlled
+same-host matrix across seven matched seed pairs. Runtime-wheel and optimizer
+sensitivity replicate for quantized artifacts while FP32 decisions remain
+stable. It strengthens a conditional numerical-portability audit, not a new
+quantizer or a claim that quantization is generally unsafe.
+
+The seven pairs are conditional on development acceptance/availability. Most
+artifacts have only the common 256-message panel; only the primary pair has
+all 1700 messages. One Kaggle host and one labeled source family remain.
+This is not new independent data, a fresh physical-phone matrix, a verified
+phone fix or clinical validation. The max-delta envelope applies only to the
+completed finite suite.
+
+Keep old/new comparisons distinct: Android's original main hybrid compression
+comparison loses eight detected positives and gains none. In the new host
+suite, same-setting compression loses 7–9 and gains one. Those are different
+execution conditions; the Android result must not be generalized to all settings.

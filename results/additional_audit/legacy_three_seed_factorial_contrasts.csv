@@ -1,0 +1,21 @@
+contrast,split,metric,seeds,tau,mean_delta,min_seed_delta,max_seed_delta,scope
+loss_without_augmentation,test,recall,3,0.7,0.061333333333333274,0.05799999999999994,0.06599999999999995,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_without_augmentation,test,fpr,3,0.7,0.05544286680189318,0.036511156186612576,0.0669371196754564,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_without_augmentation,probe_final,recall,3,0.7,0.12000000000000006,0.09000000000000008,0.16000000000000003,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_without_augmentation,probe_final,fpr,3,0.7,0.08333333333333333,0.06666666666666668,0.1,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_without_augmentation,hn_final,source_negative_alert_rate,3,0.7,0.08513708513708512,0.07575757575757575,0.10389610389610389,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_with_augmentation,test,recall,3,0.7,0.061999999999999944,0.05399999999999994,0.07799999999999996,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_with_augmentation,test,fpr,3,0.7,0.05206220419202165,0.030425963488843827,0.06288032454361056,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_with_augmentation,probe_final,recall,3,0.7,0.12,0.10999999999999999,0.13,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_with_augmentation,probe_final,fpr,3,0.7,0.07777777777777779,0.05000000000000002,0.1,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+loss_with_augmentation,hn_final,source_negative_alert_rate,3,0.7,0.06132756132756132,0.032467532467532464,0.0800865800865801,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_ce,test,recall,3,0.7,0.002666666666666669,-0.01200000000000001,0.01200000000000001,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_ce,test,fpr,3,0.7,0.002704530087897228,-0.008113590263691683,0.02434077079107505,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_ce,probe_final,recall,3,0.7,-0.0033333333333332993,-0.04999999999999993,0.06999999999999995,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_ce,probe_final,fpr,3,0.7,-0.022222222222222227,-0.06666666666666668,0.016666666666666663,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_ce,hn_final,source_negative_alert_rate,3,0.7,-0.0072150072150072185,-0.012987012987012991,-0.004329004329004328,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_saqs_loss,test,recall,3,0.7,0.003333333333333336,-0.02400000000000002,0.030000000000000027,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_saqs_loss,test,fpr,3,0.7,-0.0006761325219743023,-0.04056795131845842,0.02028397565922921,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_saqs_loss,probe_final,recall,3,0.7,-0.0033333333333333734,-0.030000000000000027,0.019999999999999907,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_saqs_loss,probe_final,fpr,3,0.7,-0.027777777777777773,-0.06666666666666665,0.016666666666666663,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim
+augmentation_with_saqs_loss,hn_final,source_negative_alert_rate,3,0.7,-0.031024531024531024,-0.08441558441558442,0.0,post-hoc descriptive factorial contrasts on inspected legacy data; no generalization claim

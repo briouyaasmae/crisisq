@@ -1,0 +1,391 @@
+{
+  "timing_runs": [
+    {
+      "device": "HONOR HEY2-W09",
+      "run_number": 1,
+      "file": "crisisq_device_results_2026-11-13T125525025423Z.zip",
+      "run_id": "2026-11-13T124634442019Z",
+      "configuration_hash": "81b8708be4740f9d6b9a3e348137ad34ba9fe695751715723009297bc3ffe3c5",
+      "context": {
+        "evidence_plan_hash": "73eb4e3dbd50dd2a68b000a3e6bf58fd1f9f7a6d655a23b7069131c039d2ba7c",
+        "packet_sha256": "a053b4df62c213d9662f93d0ddd5abceb7f0d6a2d43e350fc30a6b5db8ed06b8",
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "cases_sha256": "cc335ea2fc4a2256a99c3b368c78c4f952f43265e3219c8bf4986fb8189690b6",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "device_id": "HONOR HEY2-W09",
+        "device": {
+          "model": "HONOR HEY2-W09",
+          "os": "Android 14 / SDK 34",
+          "physical": true
+        },
+        "threads": 4,
+        "full_pipeline": true,
+        "selected_models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "study_scope": "fp32_and_quint8_portability",
+        "allow_quint8_cross_runtime_drift": true,
+        "measurement_protocol": "quint8_portability_v1",
+        "session_configs": {},
+        "quint8_reference_policy": "record_kaggle_drift_require_device_repeatability",
+        "required_tasks": 16,
+        "required_measurements": 5120,
+        "tau": 0.6455836149936347,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "provider": "CPUExecutionProvider",
+        "repeats": 5,
+        "warmups": 10,
+        "build_mode": "release",
+        "app_version": "1.1.0"
+      },
+      "thermal_snapshot_states": {
+        "none": 64
+      }
+    },
+    {
+      "device": "HONOR HEY2-W09",
+      "run_number": 2,
+      "file": "crisisq_device_results_2026-11-13T131856485987Z.zip",
+      "run_id": "2026-11-13T130800851839Z",
+      "configuration_hash": "81b8708be4740f9d6b9a3e348137ad34ba9fe695751715723009297bc3ffe3c5",
+      "context": {
+        "evidence_plan_hash": "73eb4e3dbd50dd2a68b000a3e6bf58fd1f9f7a6d655a23b7069131c039d2ba7c",
+        "packet_sha256": "a053b4df62c213d9662f93d0ddd5abceb7f0d6a2d43e350fc30a6b5db8ed06b8",
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "cases_sha256": "cc335ea2fc4a2256a99c3b368c78c4f952f43265e3219c8bf4986fb8189690b6",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "device_id": "HONOR HEY2-W09",
+        "device": {
+          "model": "HONOR HEY2-W09",
+          "os": "Android 14 / SDK 34",
+          "physical": true
+        },
+        "threads": 4,
+        "full_pipeline": true,
+        "selected_models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "study_scope": "fp32_and_quint8_portability",
+        "allow_quint8_cross_runtime_drift": true,
+        "measurement_protocol": "quint8_portability_v1",
+        "session_configs": {},
+        "quint8_reference_policy": "record_kaggle_drift_require_device_repeatability",
+        "required_tasks": 16,
+        "required_measurements": 5120,
+        "tau": 0.6455836149936347,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "provider": "CPUExecutionProvider",
+        "repeats": 5,
+        "warmups": 10,
+        "build_mode": "release",
+        "app_version": "1.1.0"
+      },
+      "thermal_snapshot_states": {
+        "none": 64
+      }
+    },
+    {
+      "device": "HONOR HEY2-W09",
+      "run_number": 3,
+      "file": "crisisq_device_results_2026-11-13T134258709747Z.zip",
+      "run_id": "2026-11-13T133421138071Z",
+      "configuration_hash": "81b8708be4740f9d6b9a3e348137ad34ba9fe695751715723009297bc3ffe3c5",
+      "context": {
+        "evidence_plan_hash": "73eb4e3dbd50dd2a68b000a3e6bf58fd1f9f7a6d655a23b7069131c039d2ba7c",
+        "packet_sha256": "a053b4df62c213d9662f93d0ddd5abceb7f0d6a2d43e350fc30a6b5db8ed06b8",
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "cases_sha256": "cc335ea2fc4a2256a99c3b368c78c4f952f43265e3219c8bf4986fb8189690b6",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "device_id": "HONOR HEY2-W09",
+        "device": {
+          "model": "HONOR HEY2-W09",
+          "os": "Android 14 / SDK 34",
+          "physical": true
+        },
+        "threads": 4,
+        "full_pipeline": true,
+        "selected_models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "study_scope": "fp32_and_quint8_portability",
+        "allow_quint8_cross_runtime_drift": true,
+        "measurement_protocol": "quint8_portability_v1",
+        "session_configs": {},
+        "quint8_reference_policy": "record_kaggle_drift_require_device_repeatability",
+        "required_tasks": 16,
+        "required_measurements": 5120,
+        "tau": 0.6455836149936347,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "provider": "CPUExecutionProvider",
+        "repeats": 5,
+        "warmups": 10,
+        "build_mode": "release",
+        "app_version": "1.1.0"
+      },
+      "thermal_snapshot_states": {
+        "none": 64
+      }
+    },
+    {
+      "device": "Samsung SM-A225F",
+      "run_number": 1,
+      "file": "crisisq_device_results_2026-11-13T151645025366Z.zip",
+      "run_id": "2026-11-13T142929997456Z",
+      "configuration_hash": "b47669a552d6acf15ea428d0810b2c54c7692559a6e3291c993bb4f0ed17f345",
+      "context": {
+        "evidence_plan_hash": "73eb4e3dbd50dd2a68b000a3e6bf58fd1f9f7a6d655a23b7069131c039d2ba7c",
+        "packet_sha256": "a053b4df62c213d9662f93d0ddd5abceb7f0d6a2d43e350fc30a6b5db8ed06b8",
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "cases_sha256": "cc335ea2fc4a2256a99c3b368c78c4f952f43265e3219c8bf4986fb8189690b6",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "device_id": "samsung SM-A225F",
+        "device": {
+          "model": "samsung SM-A225F",
+          "os": "Android 13 / SDK 33",
+          "physical": true
+        },
+        "threads": 4,
+        "full_pipeline": true,
+        "selected_models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "study_scope": "fp32_and_quint8_portability",
+        "allow_quint8_cross_runtime_drift": true,
+        "measurement_protocol": "quint8_portability_v1",
+        "session_configs": {},
+        "quint8_reference_policy": "record_kaggle_drift_require_device_repeatability",
+        "required_tasks": 16,
+        "required_measurements": 5120,
+        "tau": 0.6455836149936347,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "provider": "CPUExecutionProvider",
+        "repeats": 5,
+        "warmups": 10,
+        "build_mode": "release",
+        "app_version": "1.1.0"
+      },
+      "thermal_snapshot_states": {
+        "light": 28,
+        "moderate": 33,
+        "none": 3
+      }
+    },
+    {
+      "device": "Samsung SM-A225F",
+      "run_number": 2,
+      "file": "crisisq_device_results_2026-11-13T162007409268Z.zip",
+      "run_id": "2026-11-13T155343926026Z",
+      "configuration_hash": "b47669a552d6acf15ea428d0810b2c54c7692559a6e3291c993bb4f0ed17f345",
+      "context": {
+        "evidence_plan_hash": "73eb4e3dbd50dd2a68b000a3e6bf58fd1f9f7a6d655a23b7069131c039d2ba7c",
+        "packet_sha256": "a053b4df62c213d9662f93d0ddd5abceb7f0d6a2d43e350fc30a6b5db8ed06b8",
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "cases_sha256": "cc335ea2fc4a2256a99c3b368c78c4f952f43265e3219c8bf4986fb8189690b6",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "device_id": "samsung SM-A225F",
+        "device": {
+          "model": "samsung SM-A225F",
+          "os": "Android 13 / SDK 33",
+          "physical": true
+        },
+        "threads": 4,
+        "full_pipeline": true,
+        "selected_models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "study_scope": "fp32_and_quint8_portability",
+        "allow_quint8_cross_runtime_drift": true,
+        "measurement_protocol": "quint8_portability_v1",
+        "session_configs": {},
+        "quint8_reference_policy": "record_kaggle_drift_require_device_repeatability",
+        "required_tasks": 16,
+        "required_measurements": 5120,
+        "tau": 0.6455836149936347,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "provider": "CPUExecutionProvider",
+        "repeats": 5,
+        "warmups": 10,
+        "build_mode": "release",
+        "app_version": "1.1.0"
+      },
+      "thermal_snapshot_states": {
+        "none": 19,
+        "light": 28,
+        "moderate": 17
+      }
+    },
+    {
+      "device": "Samsung SM-A225F",
+      "run_number": 3,
+      "file": "crisisq_device_results_2026-11-13T164748745397Z.zip",
+      "run_id": "2026-11-13T162127138173Z",
+      "configuration_hash": "b47669a552d6acf15ea428d0810b2c54c7692559a6e3291c993bb4f0ed17f345",
+      "context": {
+        "evidence_plan_hash": "73eb4e3dbd50dd2a68b000a3e6bf58fd1f9f7a6d655a23b7069131c039d2ba7c",
+        "packet_sha256": "a053b4df62c213d9662f93d0ddd5abceb7f0d6a2d43e350fc30a6b5db8ed06b8",
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "cases_sha256": "cc335ea2fc4a2256a99c3b368c78c4f952f43265e3219c8bf4986fb8189690b6",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "device_id": "samsung SM-A225F",
+        "device": {
+          "model": "samsung SM-A225F",
+          "os": "Android 13 / SDK 33",
+          "physical": true
+        },
+        "threads": 4,
+        "full_pipeline": true,
+        "selected_models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "study_scope": "fp32_and_quint8_portability",
+        "allow_quint8_cross_runtime_drift": true,
+        "measurement_protocol": "quint8_portability_v1",
+        "session_configs": {},
+        "quint8_reference_policy": "record_kaggle_drift_require_device_repeatability",
+        "required_tasks": 16,
+        "required_measurements": 5120,
+        "tau": 0.6455836149936347,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "provider": "CPUExecutionProvider",
+        "repeats": 5,
+        "warmups": 10,
+        "build_mode": "release",
+        "app_version": "1.1.0"
+      },
+      "thermal_snapshot_states": {
+        "light": 35,
+        "moderate": 29
+      }
+    }
+  ],
+  "full_classification_runs": [
+    {
+      "file": "crisisq_full_device_evaluation_2026-11-13T154043157364Z.zip",
+      "run_id": "2026-11-13T152226023608Z",
+      "configuration_hash": "6bc9b02e2c0e76a8d27ea02d1630936c932bb5d1703c49f8fa748196128f2465",
+      "configuration": {
+        "protocol": "full_labeled_device_evaluation_v1",
+        "packet_manifest_sha256": "b0f6f391c1277d826658bc11339ac47317d9766f0ae8c4b96be54fae77886f19",
+        "cases_sha256": "a24de8c2b432ddbe3880a579abc9106cde59d38b9f545eeae30f73ad955b1372",
+        "source_external_hash": "fe7125e21acb826cd46fa837388b55ff75dfe1b4177a68cdebf133d14ab1dfbf",
+        "source_evaluation_rows_hash": "f5762e095d91b17eb58123d4304944dd29d99d2f2e8e0c0d2ae5b7528dbdc057",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "device_id": "HONOR HEY2-W09",
+        "device": {
+          "model": "HONOR HEY2-W09",
+          "os": "Android 14 / SDK 34",
+          "physical": true
+        },
+        "threads": 4,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "session_configs": {},
+        "provider": "CPUExecutionProvider",
+        "build_mode": "release",
+        "tau": 0.6455836149936347,
+        "models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "case_count": 1700,
+        "required_neural_forward_passes": 3400,
+        "derived_configuration_decisions": 6800,
+        "chunk_size": 25,
+        "input_scope": "saved tokenizer IDs; classification only; no pipeline timing claim",
+        "selection_scope": "same frozen source labels, groups and partitions; previously inspected data; no retuning"
+      },
+      "started_utc": "2026-11-13T15:22:26.024575Z"
+    },
+    {
+      "file": "crisisq_full_device_evaluation_2026-11-13T171816679850Z.zip",
+      "run_id": "2026-11-13T164920090852Z",
+      "configuration_hash": "53882ace49c4735c9dc8726a9b2d87b74a7ba911e23a6cdda122c6530de1b355",
+      "configuration": {
+        "protocol": "full_labeled_device_evaluation_v1",
+        "packet_manifest_sha256": "b0f6f391c1277d826658bc11339ac47317d9766f0ae8c4b96be54fae77886f19",
+        "cases_sha256": "a24de8c2b432ddbe3880a579abc9106cde59d38b9f545eeae30f73ad955b1372",
+        "source_external_hash": "fe7125e21acb826cd46fa837388b55ff75dfe1b4177a68cdebf133d14ab1dfbf",
+        "source_evaluation_rows_hash": "f5762e095d91b17eb58123d4304944dd29d99d2f2e8e0c0d2ae5b7528dbdc057",
+        "model_hashes": {
+          "config.json": "0b3083bf9cd1a27d1d060a02cb8450b2573cf56d34a1a7051f7b071ae4bc0a7a",
+          "fp32.onnx": "183e352bfba56cfe6f3d9c7b85823835de38d86642747977ceda9950572f754d",
+          "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "tokenizer_config.json": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+          "q_quint8.onnx": "b56286e0de34799c321d08baa5e2e2be1fdf1429189206b012d34f637b2e5fe2"
+        },
+        "rules_sha256": "661af3b209f5a166cef235c31462ce1daa90a6c92123dec6ef1247372ef04c29",
+        "device_id": "samsung SM-A225F",
+        "device": {
+          "model": "samsung SM-A225F",
+          "os": "Android 13 / SDK 33",
+          "physical": true
+        },
+        "threads": 4,
+        "runtime": "flutter_onnxruntime 1.9.0 / ORT 1.28.0 (pinned Android/iOS dependency)",
+        "session_configs": {},
+        "provider": "CPUExecutionProvider",
+        "build_mode": "release",
+        "tau": 0.6455836149936347,
+        "models": [
+          "fp32",
+          "q_quint8"
+        ],
+        "case_count": 1700,
+        "required_neural_forward_passes": 3400,
+        "derived_configuration_decisions": 6800,
+        "chunk_size": 25,
+        "input_scope": "saved tokenizer IDs; classification only; no pipeline timing claim",
+        "selection_scope": "same frozen source labels, groups and partitions; previously inspected data; no retuning"
+      },
+      "started_utc": "2026-11-13T16:49:20.092239Z"
+    }
+  ]
+}

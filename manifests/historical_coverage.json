@@ -1,0 +1,39 @@
+{
+  "complete_historical_archive": false,
+  "conclusion": "partial historical overlap audit: absence of overlap does not prove no training/evaluation contamination",
+  "files": [
+    {
+      "file": "data/hn_random_annotation_template.csv",
+      "rows": 150
+    },
+    {
+      "file": "mobile/hn_final_parity.csv",
+      "rows": 462
+    },
+    {
+      "file": "mobile/probe_final_parity.csv",
+      "rows": 160
+    },
+    {
+      "file": "tables/lexical_overlap_flags.csv",
+      "rows": 2
+    },
+    {
+      "file": "tables/misclassified_texts.csv",
+      "rows": 12041
+    }
+  ],
+  "known_unique_texts": 926,
+  "missing_complete_splits": [
+    "aug",
+    "cal",
+    "conflict",
+    "hn_dev",
+    "hn_final",
+    "probe_dev",
+    "probe_final",
+    "test",
+    "train"
+  ],
+  "verified_complete_splits": {}
+}

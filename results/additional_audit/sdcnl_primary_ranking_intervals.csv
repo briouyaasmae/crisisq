@@ -1,0 +1,4 @@
+metric,value,ci_low,ci_high,method
+fp32_auroc,0.7447211543818597,0.6963339621843092,0.7927237925642368,post-hoc1000 paired author-cluster percentile resamples; no ranking-equivalence test
+quantized_auroc,0.7455847122402363,0.6970645752010101,0.7911882159856323,post-hoc1000 paired author-cluster percentile resamples; no ranking-equivalence test
+quantized_minus_fp32_auroc,0.0008635578583765513,-0.0059719958156595225,0.007719779720697949,post-hoc1000 paired author-cluster percentile resamples; no ranking-equivalence test

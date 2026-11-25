@@ -1,0 +1,17 @@
+{
+  "analysis": "post-hoc descriptive split; no annotation, inference or model selection",
+  "index_sha256": "8f1a5222a56839450055f2c73b5e3edf1a2dac2c007549d9dbc561aa8e52e866",
+  "exports": [
+    {
+      "file": "crisisq_full_device_evaluation_2026-11-13T154043157364Z.zip",
+      "sha256": "7189889d34870e8739a16cfa377daeb32c2288ebdc7797d80d27b22b2ad01fc4"
+    },
+    {
+      "file": "crisisq_full_device_evaluation_2026-11-13T171816679850Z.zip",
+      "sha256": "b4835c1c18c6893ae974120a55b24eab86dd929c083b2e463fa59874687a0a75"
+    }
+  ],
+  "devices_agree": true,
+  "unit": "unique message; devices not pooled",
+  "flag": "original frozen explicit_keyword_present, not the broader enrichment pattern"
+}

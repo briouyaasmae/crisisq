@@ -1,0 +1,3 @@
+configuration,size_mb,losses_1_31_1,losses_1_28_0,added_reference_negative_alerts,worst_total_disagreements,cross_runtime_disagreements,scope
+Original QUInt8,67.363342,4,5,2,7,1,"256 calibration messages; FP32-reference decisions, not clinical labels"
+Best intermediate allocation,88.588658,2,2,1,3,0,"256 calibration messages; FP32-reference decisions, not clinical labels"

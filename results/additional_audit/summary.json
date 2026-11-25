@@ -1,0 +1,35 @@
+{
+  "result_tables_inventoried": 55,
+  "confusion_rate_rows_checked": 1191,
+  "sdcnl_quantized_graphs": 14,
+  "sdcnl_net_positive_loss_graphs": 14,
+  "sdcnl_zero_positive_gain_graphs": 10,
+  "net_positive_loss_min": 1,
+  "net_positive_loss_max": 11,
+  "masked_source_positive_count": 2,
+  "masked_source_negative_count": 4,
+  "primary_ranking": [
+    {
+      "metric": "fp32_auroc",
+      "value": 0.7447211543818597,
+      "ci_low": 0.6963339621843092,
+      "ci_high": 0.7927237925642368,
+      "method": "post-hoc1000 paired author-cluster percentile resamples; no ranking-equivalence test"
+    },
+    {
+      "metric": "quantized_auroc",
+      "value": 0.7455847122402363,
+      "ci_low": 0.6970645752010101,
+      "ci_high": 0.7911882159856323,
+      "method": "post-hoc1000 paired author-cluster percentile resamples; no ranking-equivalence test"
+    },
+    {
+      "metric": "quantized_minus_fp32_auroc",
+      "value": 0.0008635578583765513,
+      "ci_low": -0.0059719958156595225,
+      "ci_high": 0.007719779720697949,
+      "method": "post-hoc1000 paired author-cluster percentile resamples; no ranking-equivalence test"
+    }
+  ],
+  "scope": "post-hoc reanalysis of previously inspected frozen predictions; no retraining, new inference, threshold change or new independent test"
+}

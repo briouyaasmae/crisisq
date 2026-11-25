@@ -1,0 +1,17 @@
+profile,variant,comparison,paired_measurements,mean_paired_delta_ms,ratio_of_means
+support_unlabeled,fp32,hybrid_vs_neural,320,0.5081050124999997,1.0091553818228278
+support_unlabeled,q_quint8,hybrid_vs_neural,320,-0.6222812781249999,0.9883716218259754
+support_unlabeled,neural,int8_vs_fp32,320,-1.9839384437500005,0.964252047276314
+support_unlabeled,hybrid,int8_vs_fp32,320,-3.114324734375,0.9443930805720339
+labeled_hard_negative,fp32,hybrid_vs_neural,320,-18.56276375,0.6726729611263339
+labeled_hard_negative,q_quint8,hybrid_vs_neural,320,-16.93333825625,0.6837764577959556
+labeled_hard_negative,neural,int8_vs_fp32,320,-3.1615122125,0.944251381700607
+labeled_hard_negative,hybrid,int8_vs_fp32,320,-1.53208671875,0.9598376958203881
+positive_probe,fp32,hybrid_vs_neural,320,-8.011318184375,0.8515548555532391
+positive_probe,q_quint8,hybrid_vs_neural,320,-10.2832124375,0.8054145671346682
+positive_probe,neural,int8_vs_fp32,320,-1.1214321093749997,0.9792205043374649
+positive_probe,hybrid,int8_vs_fp32,320,-3.3933263625000003,0.9261628343578188
+binary_test,fp32,hybrid_vs_neural,320,-13.656502849999999,0.7542201135251821
+binary_test,q_quint8,hybrid_vs_neural,320,-12.73034904375,0.7596508575080044
+binary_test,neural,int8_vs_fp32,320,-2.597888134375,0.9532450834775053
+binary_test,hybrid,int8_vs_fp32,320,-1.6717343281250003,0.9601089020212115

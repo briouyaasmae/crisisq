@@ -1,0 +1,76 @@
+{
+  "fusion": {
+    "jobs_verified": 28,
+    "inference_rows": 47600,
+    "maximum_within_session_repeat_delta": 0.0,
+    "maximum_saved_graph_replay_logit_delta": 0.0,
+    "plan_hash": "be172f1cff0886056905100059430efc0aa2757c571f170f77ccb109bea39b1b",
+    "comparison_to_prior_matrix": [
+      {
+        "model": "saqs__42__fp32",
+        "runtime": "1.28.0",
+        "level": "basic",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      },
+      {
+        "model": "saqs__42__fp32",
+        "runtime": "1.28.0",
+        "level": "extended",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      },
+      {
+        "model": "saqs__42__fp32",
+        "runtime": "1.31.1",
+        "level": "basic",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      },
+      {
+        "model": "saqs__42__fp32",
+        "runtime": "1.31.1",
+        "level": "extended",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      },
+      {
+        "model": "saqs__42__q_quint8",
+        "runtime": "1.28.0",
+        "level": "basic",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      },
+      {
+        "model": "saqs__42__q_quint8",
+        "runtime": "1.28.0",
+        "level": "extended",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      },
+      {
+        "model": "saqs__42__q_quint8",
+        "runtime": "1.31.1",
+        "level": "basic",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      },
+      {
+        "model": "saqs__42__q_quint8",
+        "runtime": "1.31.1",
+        "level": "extended",
+        "max_probability_delta": 0.0,
+        "changed_decisions": 0
+      }
+    ]
+  },
+  "sdcnl": {
+    "jobs_verified": 28,
+    "inference_rows": 53060,
+    "maximum_within_session_repeat_delta": 0.0,
+    "maximum_saved_graph_replay_logit_delta": null,
+    "plan_hash": "668a3a5e566548bd2b6ec61ace5fb50d85f94e44590a9e5721ea95a41ea63a0c",
+    "metrics_rows_verified": 224,
+    "paired_contrast_rows_verified": 336
+  }
+}

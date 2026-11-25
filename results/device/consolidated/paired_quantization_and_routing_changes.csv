@@ -1,0 +1,13 @@
+partition,comparison,baseline,candidate,n,changed_decisions,positive_lost,positive_gained,new_negative_alerts,removed_negative_alerts,baseline_detected_positive,conditional_positive_loss
+binary_test,quantization_neural,fp32/neural,q_quint8/neural,1000,18,11,0,0,7,426,0.025821596244131457
+binary_test,quantization_hybrid,fp32/hybrid,q_quint8/hybrid,1000,13,8,0,0,5,429,0.018648018648018648
+binary_test,routing_fp32,fp32/neural,fp32/hybrid,1000,10,1,4,5,0,426,0.002347417840375587
+binary_test,routing_quint8,q_quint8/neural,q_quint8/hybrid,1000,15,1,7,7,0,415,0.0024096385542168677
+labeled_hard_negative,quantization_neural,fp32/neural,q_quint8/neural,300,25,0,0,1,24,0,
+labeled_hard_negative,quantization_hybrid,fp32/hybrid,q_quint8/hybrid,300,16,0,0,1,15,0,
+labeled_hard_negative,routing_fp32,fp32/neural,fp32/hybrid,300,20,0,0,18,2,0,
+labeled_hard_negative,routing_quint8,q_quint8/neural,q_quint8/hybrid,300,27,0,0,26,1,0,
+positive_probe,quantization_neural,fp32/neural,q_quint8/neural,400,16,11,0,2,3,245,0.044897959183673466
+positive_probe,quantization_hybrid,fp32/hybrid,q_quint8/hybrid,400,14,9,0,2,3,246,0.036585365853658534
+positive_probe,routing_fp32,fp32/neural,fp32/hybrid,400,2,0,1,1,0,245,0.0
+positive_probe,routing_quint8,q_quint8/neural,q_quint8/hybrid,400,4,0,3,1,0,234,0.0

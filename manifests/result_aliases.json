@@ -1,0 +1,4 @@
+{
+  "runtime_diagnostics/ort128_no_quant_fusions.tsv": "runtime_diagnostics/ort128_default.tsv",
+  "runtime_diagnostics/ort128_no_kleidiai.tsv": "runtime_diagnostics/ort128_default.tsv"
+}

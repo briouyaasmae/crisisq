@@ -1,0 +1,17 @@
+device,variant,profile,independent_run_means,neural_ms,hybrid_ms,reduction_percent,hybrid_gate_exit_fraction,scope
+HONOR HEY2-W09,fp32,binary_test,3,129.07454687499998,97.64703437499999,24.348342303642113,0.25,same64messages/profile; fixed order; descriptive three-run means
+HONOR HEY2-W09,fp32,labeled_hard_negative,3,127.88721770833331,86.25625000000002,32.552876240750805,0.3125,same64messages/profile; fixed order; descriptive three-run means
+HONOR HEY2-W09,fp32,positive_probe,3,124.888784375,106.08028020833332,15.06020277224488,0.1875,same64messages/profile; fixed order; descriptive three-run means
+HONOR HEY2-W09,fp32,support_unlabeled,3,129.24315729166656,129.9965895833334,-0.5829572005630723,0.0,same64messages/profile; fixed order; descriptive three-run means
+HONOR HEY2-W09,q_quint8,binary_test,3,46.39488437499998,35.327133333333336,23.855541814068047,0.25,same64messages/profile; fixed order; descriptive three-run means
+HONOR HEY2-W09,q_quint8,labeled_hard_negative,3,46.517629166666644,31.917311458333316,31.38663334716023,0.3125,same64messages/profile; fixed order; descriptive three-run means
+HONOR HEY2-W09,q_quint8,positive_probe,3,47.04132708333333,38.10846979166666,18.989381987124187,0.1875,same64messages/profile; fixed order; descriptive three-run means
+HONOR HEY2-W09,q_quint8,support_unlabeled,3,45.657407291666665,45.534046874999994,0.2701870824127761,0.0,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,fp32,binary_test,3,420.221015625,315.56450729166664,24.905110511352323,0.25,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,fp32,labeled_hard_negative,3,417.62917083333326,288.2888770833333,30.970129191865492,0.3125,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,fp32,positive_probe,3,423.24440833333347,342.6291875000001,19.04696653897514,0.1875,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,fp32,support_unlabeled,3,418.19961562500004,418.347784375,-0.03543014973328429,0.0,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,q_quint8,binary_test,3,191.5380416666666,143.475890625,25.092744304710546,0.25,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,q_quint8,labeled_hard_negative,3,189.60249895833329,131.04503958333333,30.88432889688254,0.3125,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,q_quint8,positive_probe,3,190.92369062500003,155.99864895833332,18.292670517910857,0.1875,same64messages/profile; fixed order; descriptive three-run means
+Samsung SM-A225F,q_quint8,support_unlabeled,3,189.03636562499992,189.72891354166663,-0.36635697812799073,0.0,same64messages/profile; fixed order; descriptive three-run means

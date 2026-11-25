@@ -1,0 +1,10 @@
+ce: 9/10 seeds passed hybrid development budgets plus calibration recall guard. Report rejected seeds; no fallback is accepted.
+saqs: 8/10 seeds passed hybrid development budgets plus calibration recall guard. Report rejected seeds; no fallback is accepted.
+ce_aug: 2/3 seeds passed hybrid development budgets plus calibration recall guard. Report rejected seeds; no fallback is accepted.
+saqs_loss: 2/3 seeds passed hybrid development budgets plus calibration recall guard. Report rejected seeds; no fallback is accepted.
+Previously observed final sets are replication evidence, not untouched confirmatory evaluation.
+Any original 6.2% hard-negative rate must be recalculated on independent, verified negatives; this notebook does not assume that number will reproduce.
+Zero flips describes observed comparative stability; inspect absolute recall and fixed-threshold flips separately.
+No clinical validation, clinical readiness or deployment-safety claim is established.
+Compression size is measured per ONNX file; device latency requires separate measurements on that device.
+New quantizer selection and additional recall guard are revision methods, not the original fixed seed-42/0.63 configuration.

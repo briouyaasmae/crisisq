@@ -1,0 +1,463 @@
+{
+  "binary_test": {
+    "bootstrap_repetitions": 2000,
+    "group_count": 996,
+    "unit": "resampled original group_id clusters within this frozen source partition",
+    "intervals": {
+      "fp32/neural.recall": {
+        "lower_95": 0.8198730680340892,
+        "upper_95": 0.8817658523798652,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.false_positive_rate": {
+        "lower_95": 0.11399313725490197,
+        "upper_95": 0.17943801376261054,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.precision": {
+        "lower_95": 0.8188640626724043,
+        "upper_95": 0.8850120263959727,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.specificity": {
+        "lower_95": 0.8205619862373894,
+        "upper_95": 0.886006862745098,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.f1": {
+        "lower_95": 0.8288628338339151,
+        "upper_95": 0.8756242687137924,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.accuracy": {
+        "lower_95": 0.8311814054862715,
+        "upper_95": 0.8746238716148446,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.recall": {
+        "lower_95": 0.8261558759973404,
+        "upper_95": 0.8872964993844359,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.false_positive_rate": {
+        "lower_95": 0.12326043737574553,
+        "upper_95": 0.1912403339797632,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.precision": {
+        "lower_95": 0.8113171192787291,
+        "upper_95": 0.87890625,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.specificity": {
+        "lower_95": 0.8087596660202367,
+        "upper_95": 0.8767395626242545,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.f1": {
+        "lower_95": 0.827725751317476,
+        "upper_95": 0.8746241640373015,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.accuracy": {
+        "lower_95": 0.8286845603557713,
+        "upper_95": 0.873,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.recall": {
+        "lower_95": 0.7962533121356651,
+        "upper_95": 0.8619264628805444,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.false_positive_rate": {
+        "lower_95": 0.10061129977711088,
+        "upper_95": 0.16307285785003786,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.precision": {
+        "lower_95": 0.829317788110868,
+        "upper_95": 0.8941963480322672,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.specificity": {
+        "lower_95": 0.8369271421499621,
+        "upper_95": 0.8993887002228891,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.f1": {
+        "lower_95": 0.8213510263382646,
+        "upper_95": 0.8695652173913043,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.accuracy": {
+        "lower_95": 0.8268268268268268,
+        "upper_95": 0.8715164667308699,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.recall": {
+        "lower_95": 0.8094279620527012,
+        "upper_95": 0.8737065312266764,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.false_positive_rate": {
+        "lower_95": 0.11434511434511435,
+        "upper_95": 0.17996831942069794,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.precision": {
+        "lower_95": 0.8188939468503937,
+        "upper_95": 0.8840333163312621,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.specificity": {
+        "lower_95": 0.820031680579302,
+        "upper_95": 0.8856548856548857,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.f1": {
+        "lower_95": 0.8220830810901897,
+        "upper_95": 0.8711686812853064,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.accuracy": {
+        "lower_95": 0.826,
+        "upper_95": 0.8708708708708709,
+        "valid_replicates": 2000
+      },
+      "quantization/neural.recall_quint8_minus_fp32": {
+        "lower_95": -0.03571596717783157,
+        "upper_95": -0.010120437181663883,
+        "valid_replicates": 2000
+      },
+      "quantization/neural.false_positive_rate_quint8_minus_fp32": {
+        "lower_95": -0.024802180411464744,
+        "upper_95": -0.004210305174701457,
+        "valid_replicates": 2000
+      },
+      "quantization/hybrid.recall_quint8_minus_fp32": {
+        "lower_95": -0.027726914125675538,
+        "upper_95": -0.005952086280056558,
+        "valid_replicates": 2000
+      },
+      "quantization/hybrid.false_positive_rate_quint8_minus_fp32": {
+        "lower_95": -0.01999999999999999,
+        "upper_95": -0.0020533880903490787,
+        "valid_replicates": 2000
+      },
+      "routing/fp32.recall_hybrid_minus_neural": {
+        "lower_95": -0.0020328320614494853,
+        "upper_95": 0.015214997724503413,
+        "valid_replicates": 2000
+      },
+      "routing/fp32.false_positive_rate_hybrid_minus_neural": {
+        "lower_95": 0.002040712415312354,
+        "upper_95": 0.019802962439101065,
+        "valid_replicates": 2000
+      },
+      "routing/q_quint8.recall_hybrid_minus_neural": {
+        "lower_95": 0.001984028760018852,
+        "upper_95": 0.023716589050209447,
+        "valid_replicates": 2000
+      },
+      "routing/q_quint8.false_positive_rate_hybrid_minus_neural": {
+        "lower_95": 0.005543640580815321,
+        "upper_95": 0.02489626556016597,
+        "valid_replicates": 2000
+      }
+    }
+  },
+  "labeled_hard_negative": {
+    "bootstrap_repetitions": 2000,
+    "group_count": 298,
+    "unit": "resampled original group_id clusters within this frozen source partition",
+    "intervals": {
+      "fp32/neural.false_positive_rate": {
+        "lower_95": 0.6342281879194631,
+        "upper_95": 0.7401315789473685,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.precision": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.specificity": {
+        "lower_95": 0.2598684210526316,
+        "upper_95": 0.36577181208053694,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.f1": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.accuracy": {
+        "lower_95": 0.2598684210526316,
+        "upper_95": 0.36577181208053694,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.false_positive_rate": {
+        "lower_95": 0.6907894736842105,
+        "upper_95": 0.7913907284768212,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.precision": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.specificity": {
+        "lower_95": 0.20860927152317882,
+        "upper_95": 0.3092105263157895,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.f1": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.accuracy": {
+        "lower_95": 0.20860927152317882,
+        "upper_95": 0.3092105263157895,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.false_positive_rate": {
+        "lower_95": 0.5570469798657718,
+        "upper_95": 0.6666666666666666,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.precision": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.specificity": {
+        "lower_95": 0.3333333333333333,
+        "upper_95": 0.4429530201342282,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.f1": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.accuracy": {
+        "lower_95": 0.3333333333333333,
+        "upper_95": 0.4429530201342282,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.false_positive_rate": {
+        "lower_95": 0.6433333333333333,
+        "upper_95": 0.7450739514348784,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.precision": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.specificity": {
+        "lower_95": 0.25492604856512147,
+        "upper_95": 0.3566666666666667,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.f1": {
+        "lower_95": 0.0,
+        "upper_95": 0.0,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.accuracy": {
+        "lower_95": 0.25492604856512147,
+        "upper_95": 0.3566666666666667,
+        "valid_replicates": 2000
+      },
+      "quantization/neural.false_positive_rate_quint8_minus_fp32": {
+        "lower_95": -0.10739406500855382,
+        "upper_95": -0.046666666666666634,
+        "valid_replicates": 2000
+      },
+      "quantization/hybrid.false_positive_rate_quint8_minus_fp32": {
+        "lower_95": -0.07333333333333336,
+        "upper_95": -0.023178807947019875,
+        "valid_replicates": 2000
+      },
+      "routing/fp32.false_positive_rate_hybrid_minus_neural": {
+        "lower_95": 0.023489932885906062,
+        "upper_95": 0.08389261744966436,
+        "valid_replicates": 2000
+      },
+      "routing/q_quint8.false_positive_rate_hybrid_minus_neural": {
+        "lower_95": 0.052614490772385454,
+        "upper_95": 0.1174496644295302,
+        "valid_replicates": 2000
+      }
+    }
+  },
+  "positive_probe": {
+    "bootstrap_repetitions": 2000,
+    "group_count": 400,
+    "unit": "resampled original group_id clusters within this frozen source partition",
+    "intervals": {
+      "fp32/neural.recall": {
+        "lower_95": 0.7725605438323184,
+        "upper_95": 0.8586662225569136,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.false_positive_rate": {
+        "lower_95": 0.05261787280701754,
+        "upper_95": 0.17333673469387753,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.precision": {
+        "lower_95": 0.9305019305019305,
+        "upper_95": 0.9798407339033554,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.specificity": {
+        "lower_95": 0.8266632653061224,
+        "upper_95": 0.9473821271929823,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.f1": {
+        "lower_95": 0.8518435698668257,
+        "upper_95": 0.9084745762711864,
+        "valid_replicates": 2000
+      },
+      "fp32/neural.accuracy": {
+        "lower_95": 0.7975,
+        "upper_95": 0.87,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.recall": {
+        "lower_95": 0.7750802034877059,
+        "upper_95": 0.8613006177076183,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.false_positive_rate": {
+        "lower_95": 0.06060606060606061,
+        "upper_95": 0.1836734693877551,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.precision": {
+        "lower_95": 0.926923076923077,
+        "upper_95": 0.9765647799124514,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.specificity": {
+        "lower_95": 0.8163265306122449,
+        "upper_95": 0.9393939393939394,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.f1": {
+        "lower_95": 0.8517110266159695,
+        "upper_95": 0.9094018583042973,
+        "valid_replicates": 2000
+      },
+      "fp32/hybrid.accuracy": {
+        "lower_95": 0.7975,
+        "upper_95": 0.87,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.recall": {
+        "lower_95": 0.7307659932659932,
+        "upper_95": 0.8245033112582781,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.false_positive_rate": {
+        "lower_95": 0.04443223443223444,
+        "upper_95": 0.16129846855653301,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.precision": {
+        "lower_95": 0.9319101939673589,
+        "upper_95": 0.9831932773109243,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.specificity": {
+        "lower_95": 0.8387015314434669,
+        "upper_95": 0.9555677655677656,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.f1": {
+        "lower_95": 0.8268119180633148,
+        "upper_95": 0.8901104017025804,
+        "valid_replicates": 2000
+      },
+      "q_quint8/neural.accuracy": {
+        "lower_95": 0.77,
+        "upper_95": 0.8475,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.recall": {
+        "lower_95": 0.7419328484081805,
+        "upper_95": 0.833898598322679,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.false_positive_rate": {
+        "lower_95": 0.05154639175257732,
+        "upper_95": 0.176485906862745,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.precision": {
+        "lower_95": 0.9273467432950192,
+        "upper_95": 0.9796747967479674,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.specificity": {
+        "lower_95": 0.8235140931372549,
+        "upper_95": 0.9484536082474226,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.f1": {
+        "lower_95": 0.8320829734690022,
+        "upper_95": 0.8936956736956737,
+        "valid_replicates": 2000
+      },
+      "q_quint8/hybrid.accuracy": {
+        "lower_95": 0.775,
+        "upper_95": 0.8525,
+        "valid_replicates": 2000
+      },
+      "quantization/neural.recall_quint8_minus_fp32": {
+        "lower_95": -0.0582565976045107,
+        "upper_95": -0.016778523489932917,
+        "valid_replicates": 2000
+      },
+      "quantization/neural.false_positive_rate_quint8_minus_fp32": {
+        "lower_95": -0.05434782608695653,
+        "upper_95": 0.03411072938689208,
+        "valid_replicates": 2000
+      },
+      "quantization/hybrid.recall_quint8_minus_fp32": {
+        "lower_95": -0.05033557046979864,
+        "upper_95": -0.013029315960912058,
+        "valid_replicates": 2000
+      },
+      "quantization/hybrid.false_positive_rate_quint8_minus_fp32": {
+        "lower_95": -0.05434782608695651,
+        "upper_95": 0.03411072938689208,
+        "valid_replicates": 2000
+      },
+      "routing/fp32.recall_hybrid_minus_neural": {
+        "lower_95": 0.0,
+        "upper_95": 0.010527242401779121,
+        "valid_replicates": 2000
+      },
+      "routing/fp32.false_positive_rate_hybrid_minus_neural": {
+        "lower_95": 0.0,
+        "upper_95": 0.03334269662921342,
+        "valid_replicates": 2000
+      },
+      "routing/q_quint8.recall_hybrid_minus_neural": {
+        "lower_95": 0.0,
+        "upper_95": 0.023257751937984527,
+        "valid_replicates": 2000
+      },
+      "routing/q_quint8.false_positive_rate_hybrid_minus_neural": {
+        "lower_95": 0.0,
+        "upper_95": 0.033342696629213436,
+        "valid_replicates": 2000
+      }
+    }
+  }
+}

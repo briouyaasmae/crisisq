@@ -1,0 +1,9 @@
+corpus,mode,metric,pairs,positive,zero,negative,mean_delta,scope
+Twitter,neural,recall,7,5,1,1,0.04771428571428572,conditional jointly accepted selected systems; not isolated loss effect
+Twitter,neural,source_negative_alert_rate,7,7,0,0,0.2357142857142857,conditional jointly accepted selected systems; not isolated loss effect
+Twitter,hybrid,recall,7,5,1,1,0.042,conditional jointly accepted selected systems; not isolated loss effect
+Twitter,hybrid,source_negative_alert_rate,7,7,0,0,0.1338095238095238,conditional jointly accepted selected systems; not isolated loss effect
+SDCNL,neural,recall,7,7,0,0,0.06439674315321982,conditional jointly accepted selected systems; not isolated loss effect
+SDCNL,neural,source_negative_alert_rate,7,7,0,0,0.07373271889400923,conditional jointly accepted selected systems; not isolated loss effect
+SDCNL,hybrid,recall,7,7,0,0,0.056254626202812706,conditional jointly accepted selected systems; not isolated loss effect
+SDCNL,hybrid,source_negative_alert_rate,7,7,0,0,0.05683563748079879,conditional jointly accepted selected systems; not isolated loss effect

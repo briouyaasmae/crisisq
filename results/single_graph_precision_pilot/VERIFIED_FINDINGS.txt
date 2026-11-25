@@ -1,0 +1,3 @@
+PASS: immutable archive/checksums; 68 jobs/17,408 predictions; all 32 calibration allocations; 36 proposals/5 size exclusions; declared greedy ranks and rejection; no evaluation/timing/export.
+Best intermediate 88.588658 MB: losses 2/2 and added reference-negative alerts 1/1; worst disagreements 3; cross-runtime disagreements 0. Original 67.363342 MB: losses 4/5, added 2/2; worst disagreements 7; cross-runtime disagreements 1.
+No zero-disagreement candidate under the tested bounded search. FP32 reference agreement is not source-label or clinical correctness. No phone or evaluation benefit established.

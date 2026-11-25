@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying CrisisQ manuscript and software using the authors, title and version below."
+title: "CrisisQ: A decision-preservation audit of quantized hybrid crisis-language detection"
+type: software
+version: 1.4.12
+date-released: 2026-11-17
+authors:
+  - family-names: Briouya
+    given-names: Asmae
+  - family-names: Briouya
+    given-names: Hasnae
+  - family-names: Choukri
+    given-names: Ali
+  - family-names: Amnai
+    given-names: Mohamed
+license: MIT
+abstract: "Nonclinical text-classification research code, frozen protocols, analysis, and Android/iOS benchmarking. The supplied model and source-data terms remain separate from the code license."

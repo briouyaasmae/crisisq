@@ -1,0 +1,7 @@
+runtime,setting,n,kaggle_probability_failures,android_probability_failures,kaggle_neural_decision_changes,max_kaggle_probability_difference
+1.28.0,default,256,197,0,3,0.1021250969964917
+1.28.0,no_kleidiai,256,197,0,3,0.1021250969964917
+1.28.0,no_quant_fusions,256,197,0,3,0.1021250969964917
+1.31.1,default,256,166,171,3,0.1021251203070469
+1.31.1,no_graph_optimization,256,167,175,3,0.10222740202403191
+1.31.1,no_quantized_fusions,256,166,171,3,0.1021251203070469

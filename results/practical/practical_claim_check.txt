@@ -1,0 +1,28 @@
+CrisisQ practical impact: frozen models, no retraining, no threshold/rule changes.
+Attribution is post-hoc analysis of already inspected external data. It is not an additional untouched classification test.
+Per-rule hit effects overlap; only exact pipeline transitions are disjoint paired outcomes.
+Kaggle timings measure this CPU host, not a phone. RSS is full isolated-process memory, not model-only or mobile RAM.
+End-to-end inference-pipeline timings exclude initialization, UI, network and battery effects; those require separate measurements.
+No superiority or clinical benefit is assumed. Interpret recovered positives alongside added negative alerts.
+Historical source-label/overlap limitations from the external evaluation remain unchanged.
+Primary binary_test: positive gains=7, positive losses=1, added source-negative alerts=7, removed source-negative alerts=0.
+Primary labeled_hard_negative: positive gains=0, positive losses=0, added source-negative alerts=27, removed source-negative alerts=1.
+Primary positive_probe: positive gains=2, positive losses=0, added source-negative alerts=1, removed source-negative alerts=0.
+Primary support_unlabeled: positive gains=0, positive losses=0, added source-negative alerts=0, removed source-negative alerts=0.
+HOST CPU binary_test/fp32/hybrid: mean=41.9075 ms, median=53.3505 ms, Stage-2 rate=0.7500.
+HOST CPU binary_test/fp32/neural: mean=55.5640 ms, median=53.9797 ms, Stage-2 rate=1.0000.
+HOST CPU binary_test/q_quint8/hybrid: mean=40.2357 ms, median=51.4041 ms, Stage-2 rate=0.7500.
+HOST CPU binary_test/q_quint8/neural: mean=52.9661 ms, median=52.2650 ms, Stage-2 rate=1.0000.
+HOST CPU labeled_hard_negative/fp32/hybrid: mean=38.1474 ms, median=52.9891 ms, Stage-2 rate=0.6875.
+HOST CPU labeled_hard_negative/fp32/neural: mean=56.7101 ms, median=55.3098 ms, Stage-2 rate=1.0000.
+HOST CPU labeled_hard_negative/q_quint8/hybrid: mean=36.6153 ms, median=51.1251 ms, Stage-2 rate=0.6875.
+HOST CPU labeled_hard_negative/q_quint8/neural: mean=53.5486 ms, median=52.7097 ms, Stage-2 rate=1.0000.
+HOST CPU positive_probe/fp32/hybrid: mean=45.9569 ms, median=54.4206 ms, Stage-2 rate=0.8125.
+HOST CPU positive_probe/fp32/neural: mean=53.9682 ms, median=53.1604 ms, Stage-2 rate=1.0000.
+HOST CPU positive_probe/q_quint8/hybrid: mean=42.5636 ms, median=51.0648 ms, Stage-2 rate=0.8125.
+HOST CPU positive_probe/q_quint8/neural: mean=52.8468 ms, median=51.9239 ms, Stage-2 rate=1.0000.
+HOST CPU support_unlabeled/fp32/hybrid: mean=56.0061 ms, median=54.9852 ms, Stage-2 rate=1.0000.
+HOST CPU support_unlabeled/fp32/neural: mean=55.4980 ms, median=54.3491 ms, Stage-2 rate=1.0000.
+HOST CPU support_unlabeled/q_quint8/hybrid: mean=52.8917 ms, median=51.7414 ms, Stage-2 rate=1.0000.
+HOST CPU support_unlabeled/q_quint8/neural: mean=53.5140 ms, median=52.1836 ms, Stage-2 rate=1.0000.
+Phone execution status: pending; adapter packet exported only

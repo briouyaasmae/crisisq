@@ -1,0 +1,3 @@
+variant,n,outside_probability_tolerance,changed_neural_decisions,max_absolute_probability_difference,threshold,devices_agree
+fp32,1700,0,0,2.0218326740595316e-06,0.6455836149936347,True
+q_quint8,1700,1388,12,0.17072058229381593,0.6455836149936347,True

@@ -1,0 +1,39 @@
+{
+  "timing_repeat_checks": {
+    "HONOR HEY2-W09": {
+      "distinct_timing_runs": 3,
+      "identical_configuration_within_device": true,
+      "changed_exported_probability_or_decision_records_vs_first_run": [
+        0,
+        0,
+        0
+      ]
+    },
+    "Samsung SM-A225F": {
+      "distinct_timing_runs": 3,
+      "identical_configuration_within_device": true,
+      "changed_exported_probability_or_decision_records_vs_first_run": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "full_classification_agreement": {
+    "fp32": {
+      "unique_source_labeled_messages": 1700,
+      "exact_exported_probability_agreements": 1700,
+      "neural_decision_agreements": 1700,
+      "hybrid_decision_agreements": 1700,
+      "max_probability_difference": 0.0
+    },
+    "q_quint8": {
+      "unique_source_labeled_messages": 1700,
+      "exact_exported_probability_agreements": 1700,
+      "neural_decision_agreements": 1700,
+      "hybrid_decision_agreements": 1700,
+      "max_probability_difference": 0.0
+    }
+  },
+  "note": "Same 1700 labeled messages on two devices; do not treat as 3400 independent texts."
+}
