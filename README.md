@@ -6,7 +6,6 @@ CrisisQ combines linguistic rules with a DistilBERT classifier and development-c
 
 ## Start here
 
-- **Read:** [Manuscript](paper/manuscript.pdf) · [Supplement](paper/supplementary.pdf)
 - **Check the recorded findings:** install `requirements.txt`, then run `python scripts/verify_results.py`. This uses saved outputs, without model inference, training or dataset downloads.
 - **Run on a phone:** follow [the device guide](docs/DEVICE.md). Exact frozen model files must be supplied separately.
 - **Repeat a notebook:** use the numbered [notebook guide](docs/REPRODUCING.md). These are optional new executions, not required to verify the supplied results.
@@ -26,7 +25,6 @@ The rejected single-graph pilot belongs only to Supplement S11. It is not a depl
 
 | Folder | One purpose |
 |---|---|
-| `paper/` | One clean manuscript, one supplement, and their LaTeX/figure sources |
 | `notebooks/` | One numbered recipe per study |
 | `scripts/` | Verification, saved-output analysis, asset preparation and plotting |
 | `results/` | Recorded reports and unique summary tables; see [the results index](results/README.md) |
@@ -36,7 +34,7 @@ The rejected single-graph pilot belongs only to Supplement S11. It is not a depl
 | `docs/` | Reproduction, phone, evidence and publication instructions |
 | `tests/` | Selection/routing and source-integrity checks |
 
-Each completed report is stored once as `recorded_report.zip`. Its original bytes and hashes are retained. Analysis scripts reconstruct needed inputs under ignored `.cache/` and write checks under `.reproduced/`; neither folder belongs in GitHub. There are no duplicate extracted research reports, alternative paper versions, reviewer letters or private author packages. Standard Flutter platform files and license notices remain where their projects require them.
+Each completed report is stored once as `recorded_report.zip`. Its original bytes and hashes are retained. Analysis scripts reconstruct needed inputs under ignored `.cache/` and write checks under `.reproduced/`; neither folder belongs in GitHub. Standard Flutter platform files and license notices remain where their projects require them.
 
 ## Quick check
 
